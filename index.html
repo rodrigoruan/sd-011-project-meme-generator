@@ -9,28 +9,19 @@
 </head>
 <body>
   <input type="text" id="text-input">
-  <div id="meme-image-container">
+  <button id="meme-insert">Insert Image</button><br>
+  <section id="meme-image-container">
     <div id="meme-text"></div>
-  </div>
+    <div id="meme-image"></div>
+  </section>
   <script src="script.js"></script>
 </body>
 </html>
 
 <!-- 
-1 - Crie uma caixa de texto com a qual quem usa pode interagir para inserir texto em cima da imagem escolhida.
-A caixa onde o texto é inserido deve ter um id denominado text-input;
-Você deve criar um elemento para servir de "container" para a imagem e para o texto do meme. Este elemento deve ter um id denominado meme-image-container;
-Dentro do elemento de container, você deve criar um outro elemento para mostrar o texto digitado. O elemento de texto deve estar totalmente contido dentro do container e ter o id denominado meme-text;
-Se não houver imagem inserida, ele deve ser inserido e estar visível dentro do container vazio onde a imagem aparecerá.
-O que será verificado:
-Será validado se o input de texto existe e conseguimos inputar texto nele;
-Será validado se o texto digitado no input é visível na tela;
-Será validado se existe um elemento de container para onde o texto será mostrado.
-
 
 2 - O site deve permitir que quem usa faça upload de uma imagem de seu computador.
 Dentro do elemento de container, você deve criar um outro elemento para mostrar a imagem selecionada. Este elemento deve possuir um id denominado meme-image;
-
 O elemento onde é feito o upload da imagem deve ser identificado com o id denominado meme-insert. Este elemento não precisa estar dentro do elemento de container;
 
 A imagem deve estar totalmente contida dentro do elemento identificado como meme-image-container ("totalmente contida" quer dizer que não deve sobrar espaço entre o container e a imagem, e a imagem não deve ultrapassar o tamanho do container);
