@@ -8,13 +8,16 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <input id="test-input" type="text">
+  <section class="container">
+    <h1>Meme Generator</h1>
+    <input id="test-input" type="text" maxlength="60" placeholder="Digite algo engraçado"/>
     <div id="meme-image-container">
         <p id="meme-text"></p>
       <div id="meme-image">
-        <input id="meme-insert" type="image">
+        <input id="meme-insert" type="file" accept="image/*"/>
       </div>  
     </div>
+  </section>
 
 
     <script src="script.js"></script>
