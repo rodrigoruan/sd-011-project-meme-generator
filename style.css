@@ -1,8 +1,20 @@
 #meme-image-container {
   margin: 30px;
   border: 1px solid black;
-  width: 35%;
+  width: 600px;
   height: 600px;
+}
+
+#meme-image {
+  position: absolute;
+  width: 600px;
+  height: 600px;
+  z-index: -1;
+}
+
+#meme-text {
+  position: absolute;
+  z-index: 0;
 }
 
 input {
