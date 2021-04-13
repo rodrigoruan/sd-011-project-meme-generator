@@ -6,6 +6,9 @@
 }
 
 #meme-text {
+  text-shadow: 5px 5px 5px black;
+  font-size: 30px;
+  color: white;
   background-color: azure;
   width: 450px;
   position: absolute;
