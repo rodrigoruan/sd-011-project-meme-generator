@@ -8,14 +8,14 @@ p {
 }
 
 #meme-image-container {
-  width: 300px;
-  height: 300px;
+  width: 500px;
+  height: 500px;
 }
 
 #meme-image {
   position: absolute;
-  height: 300px;
-  width: 300px;
+  height: 500px;
+  width: 500px;
   padding: 0px;
   margin: 0px;
   background-color: white;
@@ -24,13 +24,13 @@ p {
 
 #meme-text {
   position: absolute;
-  width: 285px;
+  width: 490px;
   margin: 0px;
   padding: 0px;
-  left: 15px;
-  top: 270px;
-  font-size: 25px;
-  color: black;
-  text-shadow: 3px 0px 3px white;
+  left: 10px;
+  top: 500px;
+  font-size: 30px;
+  color: white;
+  text-shadow: 5px 5px 5px black;
   overflow-wrap: break-word;
 }
