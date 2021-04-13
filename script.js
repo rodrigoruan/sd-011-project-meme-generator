@@ -12,7 +12,7 @@ text.addEventListener('keyup', showText);
 
 function showImage(event) {
   const newImg = document.querySelector('#meme-image');
-  container.className = 'default-border';
+  container.style.border = '1px solid black';
   newImg.src = URL.createObjectURL(event.target.files[0]);
 }
 
@@ -20,7 +20,7 @@ imageInput.addEventListener('change', showImage);
 
 function addBorder(event) {
   const btn = event.target;
-  container.className = btn.id;
+  container.style.border = `2px solid ${btn.className}`;
 }
 
 btnsBorder.addEventListener('click', addBorder);
