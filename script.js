@@ -1,20 +1,20 @@
-let input = document.querySelector('#text-input');
-let button = document.querySelector('#benjaminButton');
-let text = document.querySelector('#meme-text');
-let newImage = document.querySelector('#meme-insert');
-let localImage = document.querySelector('#meme-image');
-let container = document.querySelector('#meme-image-container');
+const input = document.querySelector('#text-input');
+const button = document.querySelector('#benjaminButton');
+const text = document.querySelector('#meme-text');
+const newImage = document.querySelector('#meme-insert');
+const localImage = document.querySelector('#meme-image');
+const container = document.querySelector('#meme-image-container');
 
 function clickButton() {
-  button.addEventListener('click', function() {
-     text.innerText = input.value;
-  })
-};
+  button.addEventListener('click', function () {
+    text.innerText = input.value;
+  });
+}
 clickButton();
 
 function inputText() {
-  input.addEventListener('keyup', function(event) {
-      document.getElementById('benjaminButton').click();
+  input.addEventListener('keyup', function () {
+    document.getElementById('benjaminButton').click();
   });
 };
 inputText();
