@@ -15,7 +15,7 @@
   color: white;
   display: inline-block;
   word-wrap: break-word;
-  text-shadow: 5px 5px black;
+  text-shadow: black 5px 5px;
 }
 
 #meme-image {
