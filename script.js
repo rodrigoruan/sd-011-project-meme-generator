@@ -3,6 +3,7 @@ const inputFile = document.querySelector('#meme-insert');
 const memeContainerText = document.querySelector('#meme-text');
 const memeContainerImg = document.querySelector('#meme-image');
 const memeContainer = document.querySelector('#meme-image-container');
+const imgMeme = document.querySelector('#img-memes');
 const btnFire = document.querySelector('#fire');
 const btnWater = document.querySelector('#water');
 const btnEarth = document.querySelector('#earth');
@@ -31,3 +32,20 @@ btnEarth.addEventListener('click', () => {
   if (memeContainer.classList !== null) memeContainer.removeAttribute('class');
   memeContainer.classList.add('earth', lintChato);
 });
+
+function indexOfNode(element) {
+  const index = [].indexOf.call(element.parentNode.childNodes, element);
+  return index;
+}
+
+function setMeme(event) {
+  const elementMeme = event.target;
+  const elementIndex = indexOfNode(elementMeme);
+  const urlMeme = elementMeme.parentNode.childNodes[elementIndex].getAttribute(
+    'src',
+  );
+  console.log(urlMeme);
+  memeContainerImg.setAttribute('src', urlMeme);
+}
+
+imgMeme.addEventListener('click', setMeme);

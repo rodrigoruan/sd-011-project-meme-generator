@@ -49,3 +49,9 @@ input {
 #earth {
   background-color: green;
 }
+
+section img {
+  width: 150px;
+  height: 150px;
+  padding: 10px;
+}
