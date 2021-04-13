@@ -9,16 +9,17 @@ const meme1 = document.querySelector('#meme-1');
 const meme2 = document.querySelector('#meme-2');
 const meme3 = document.querySelector('#meme-3');
 const meme4 = document.querySelector('#meme-4');
+const memeInsert = document.querySelector('#meme-insert');
+const output = document.getElementById('meme-image');
 
 inputText.addEventListener('keyup', () => {
   const text = inputText.value;
   memeText.innerText = text;
 });
 
-const loadFile = (event) => {
+memeInsert.onchange = (event) => {
   const reader = new FileReader();
   reader.onload = () => {
-    const output = document.getElementById('meme-image');
     output.src = reader.result;
   };
   reader.readAsDataURL(event.target.files[0]);
