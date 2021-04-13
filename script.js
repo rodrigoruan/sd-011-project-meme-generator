@@ -10,14 +10,15 @@ textInput.onkeyup = function createMemeText() {
 // 2 - O site deve permitir que quem usa faça upload de uma imagem de seu computador.
 
 const memeInsert = document.querySelector('#meme-insert');
-const memeImageContainer = document.querySelector('#meme-image-container');
+// const memeImageContainer = document.querySelector('#meme-image-container');
+const divImage = document.querySelector('#meme-image');
 
 function uploadImage(event) {
   const memeImage = document.createElement('img');
   memeImage.innerHTML = '';
-  memeImage.id = 'meme-image';
+  memeImage.id = 'image';
   memeImage.src = URL.createObjectURL(event.target.files[0]);
-  memeImageContainer.appendChild(memeImage);
+  divImage.appendChild(memeImage);
 }
 
 memeInsert.addEventListener('input', uploadImage);

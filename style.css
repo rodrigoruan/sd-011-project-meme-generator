@@ -5,14 +5,22 @@
 }
 
 #meme-text {
-  width: 400px;
-  height: 150px;
+  max-width: 500px;
+  max-height: 500px;
   border: 1px solid black;
   z-index: 2;
   position: absolute;
+  font-size: 40pt;
+  color: red;
+  display: inline-block;
 }
 
 #meme-image {
+  width: inherit;
+  height: inherit;
+}
+
+#image {
   width: inherit;
   height: inherit;
   z-index: 1;
