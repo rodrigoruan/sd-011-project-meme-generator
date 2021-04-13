@@ -11,10 +11,11 @@
   border: 1px solid black;
   z-index: 2;
   position: absolute;
-  font-size: 40pt;
-  color: red;
+  font-size: 30px;
+  color: white;
   display: inline-block;
   word-wrap: break-word;
+  text-shadow: 5px 5px black;
 }
 
 #meme-image {
