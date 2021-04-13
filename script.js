@@ -1,27 +1,19 @@
-// const inputMeme = document.querySelector('#text-input');
-
-// function writeMeme() {
-//   inputMeme.addEventListener('keyup', (e) => {
-//     if (e.keyCode === 13) {
-//       const textArea = document.querySelector('#meme-text');
-//       textArea.innerText = inputMeme.value;
-//       inputMeme.value = '';
-//     }
-//   });
-// }
-
-// writeMeme();
-
-const memeImageContainer = document.querySelector('#meme-image-container');
-const divText = document.querySelector('#div-text');
-const textInput = document.querySelector('#text-input');
+const inputMeme = document.querySelector('#text-input');
+const inputImg = document.querySelector('#meme-insert');
 
 function writeMeme() {
-  textInput.addEventListener('keyup', (e) => {
-    if (e.keycode === 13) { 
-      console.log('teste');
-    }
-  }) 
+  inputMeme.addEventListener('keyup', (e) => {
+      const textArea = document.querySelector('#meme-text');
+      textArea.innerText = inputMeme.value;
+  });
 }
 
 writeMeme();
+
+inputImg.addEventListener('change', (e) => {
+  const imgArea = document.querySelector('#meme-image'); // pai
+  let memeImg = document.createElement('img'); // cria tag
+  memeImg.setAttribute('src', e.target.value);
+  memeImg.classList.add('img');
+  imgArea.appendChild(memeImg);
+});

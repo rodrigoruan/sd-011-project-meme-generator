@@ -1,3 +1,21 @@
 #meme-image-container {
-  background-color: aqua;
+  width: 500px;
+  height: 500px;
+  background-color: white;
+  border: solid 1px black;
+}
+
+#meme-text {
+  background-color: azure;
+  width: 450px;
+  position: absolute;
+  margin-top: 460px;
+  margin-left: 25px;
+}
+
+#meme-image {
+  width: 500px;
+  height: 500px;
+  background-color: white;
+  position: absolute;
 }
