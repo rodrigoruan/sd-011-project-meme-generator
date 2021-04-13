@@ -23,7 +23,6 @@ const loadFile = (event) => {
   };
   reader.readAsDataURL(event.target.files[0]);
 };
-loadFile();
 
 earthBtn.addEventListener('click', () => {
   container.style.border = '6px groove green';
