@@ -34,3 +34,31 @@ button#earth {
   padding: 10px;
   margin: 15px;
 }
+
+#meme-1 {
+  margin: 15px;
+  width: 70px;
+  height: 70px;
+}
+
+#meme-2 {
+  margin: 15px;
+  width: 70px;
+  height: 70px;
+}
+
+#meme-3 {
+  margin: 15px;
+  width: 70px;
+  height: 70px;
+}
+
+#meme-4 {
+  margin: 15px;
+  width: 70px;
+  height: 70px;
+}
+
+#inputs {
+  margin: 15px;
+}

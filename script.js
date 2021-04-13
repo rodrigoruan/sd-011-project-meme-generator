@@ -1,9 +1,14 @@
 const getInputText = document.querySelector('#text-input');
+const output = document.getElementById('meme-image');
 const getP = document.querySelector('#meme-text');
 const getContainer = document.querySelector('#meme-image-container');
 const getFire = document.querySelector('#fire');
 const getWater = document.querySelector('#water');
 const getEarth = document.querySelector('#earth');
+const getMeme1 = document.querySelector('#meme-1');
+const getMeme2 = document.querySelector('#meme-2');
+const getMeme3 = document.querySelector('#meme-3');
+const getMeme4 = document.querySelector('#meme-4');
 
 function textInputKeyUp() {
   getInputText.addEventListener('keyup', () => {
@@ -21,7 +26,6 @@ border('1px solid black');
 loadFile = (event) => {
   const reader = new FileReader();
   reader.onload = () => {
-    const output = document.getElementById('meme-image');
     output.src = reader.result;
   };
   reader.readAsDataURL(event.target.files[0]);
@@ -43,3 +47,19 @@ function addBorderButtons() {
   });
 }
 addBorderButtons();
+
+function callThumbnails() {
+  getMeme1.addEventListener('click', () => {
+    output.src = getMeme1.src;
+  });
+  getMeme2.addEventListener('click', () => {
+    output.src = getMeme2.src;
+  });
+  getMeme3.addEventListener('click', () => {
+    output.src = getMeme3.src;
+  });
+  getMeme4.addEventListener('click', () => {
+    output.src = getMeme4.src;
+  });
+}
+callThumbnails();
