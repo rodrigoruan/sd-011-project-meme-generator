@@ -23,13 +23,24 @@ p {
 }
 
 #fire {
-  background-color: rgb(255 , 0 , 0);
+  background-color: red;
 }
 
 #water {
-  background-color: rgb(0 , 0 , 255);
+  background-color: blue;
 }
 
 #earth {
-  background-color: rgb(0 , 128 , 0);
+  background-color: green;
+}
+
+#meme-1 , #meme-2 , #meme-3 , #meme-4 {
+  display: inline-block;
+  height: 100px;
+  width: 100px;
+}
+
+#meme-1-img , #meme-2-img , #meme-3-img , #meme-4-img {
+  height: 100px;
+  width: 100px;
 }
