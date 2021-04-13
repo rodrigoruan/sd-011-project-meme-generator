@@ -24,4 +24,6 @@
   word-break: break-word;
   z-index: 1;
   color: white;
+  text-shadow: rgb(0, 0, 0) 5px 5px 5px;
+  font-size: 30px;
 }
