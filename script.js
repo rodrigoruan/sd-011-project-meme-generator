@@ -1,7 +1,6 @@
 const inputText = document.querySelector('#text-input');
 const container = document.querySelector('#meme-image-container');
 const memeText = document.querySelector('#meme-text');
-const uploadImage = document.querySelector('#meme-insert');
 const memeImg = document.querySelector('#meme-image');
 const waterBtn = document.querySelector('#water');
 const fireBtn = document.querySelector('#fire');
@@ -12,7 +11,7 @@ const meme3 = document.querySelector('#meme-3');
 const meme4 = document.querySelector('#meme-4');
 
 inputText.addEventListener('keyup', () => {
-  let text = inputText.value;
+  const text = inputText.value;
   memeText.innerText = text;
 });
 
@@ -24,6 +23,7 @@ const loadFile = (event) => {
   };
   reader.readAsDataURL(event.target.files[0]);
 };
+loadFile();
 
 earthBtn.addEventListener('click', () => {
   container.style.border = '6px groove green';
