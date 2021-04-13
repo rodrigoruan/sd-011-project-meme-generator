@@ -1,6 +1,7 @@
 const caixaDeTexto = document.querySelector('#text-imput');
+// const container = document.querySelector('#meme-image-container');
 const textoMeme = document.querySelector('#meme-text');
 
 caixaDeTexto.addEventListener('keyup', () => {
-  textoMeme.innerText = caixaDeTexto.value;
+  textoMeme.innerHTML = caixaDeTexto.value;
 });
