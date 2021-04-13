@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Projeto meme generator</title>
+  </head>
+  <body>
+    <section class="container">
+      <h1>Meme Generator</h1>
+      <input
+        id="text-input"
+        placeholder="Digite o texto aqui"
+        type="text"
+        maxlength="60"
+      />
+      <input
+        id="meme-insert"
+        type="file"
+        accept="image/*"
+        onchange="loadFile(event)"
+      />
+      <div id="meme-image-container">
+        <p id="meme-text"></p>
+        <img id="meme-image" />
+        <button id="earth">Green</button>
+        <button id="water">Blue</button>
+        <button id="fire">Red</button>
+        <ul>
+          <li id="meme-1">Imagem 1</li>
+          <li id="meme-2">Imagem 2</li>
+          <li id="meme-3">Imagem 3</li>
+          <li id="meme-4">Imagem 4</li>
+        </ul>
+      </div>
+    </section>
+    <script src="script.js"></script>
+  </body>
+</html>
