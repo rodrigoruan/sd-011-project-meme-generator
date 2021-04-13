@@ -18,8 +18,16 @@ function showImage(event) {
 imageInput.addEventListener('change', showImage);
 
 function addBorder(event) {
-  const btn = event.target;
-  container.style.borderColor = btn.className;
+  const btn = event.target.id;
+  if (btn === 'fire') {
+    container.style.border = '3px dashed rgb(255 , 0 , 0)';
+  }
+  if (btn === 'water') {
+    container.style.border = '5px double rgb(0 , 0 , 255)';
+  }
+  if (btn === 'earth') {
+    container.style.border = '6px groove rgb(0 , 128 , 0)';
+  }
 }
 
 btnsBorder.addEventListener('click', addBorder);
