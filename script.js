@@ -1,19 +1,16 @@
 const text = document.querySelector('#text-input');
-const textInput = document.querySelector('#meme-image-container');
-const textBtn = document.querySelector('#text-btn');
+const imageInput = document.querySelector('#meme-insert');
 
 function showText() {
-  const newP = document.createElement('p');
+  const newP = document.querySelector('#meme-text');
   newP.innerText = text.value;
-  newP.id = 'meme-text';
-  textInput.appendChild(newP);
 }
 
-function showTextOnEnter(event) {
-  if (event.keyCode === 13) {
-    showText();
-  }
+text.addEventListener('keyup', showText);
+
+function showImage(event) {
+  const newImg = document.querySelector('#meme-image');
+  newImg.src = URL.createObjectURL(event.target.files[0]);
 }
 
-textBtn.addEventListener('click', showText);
-text.addEventListener('keyup', showTextOnEnter);
+imageInput.addEventListener('change', showImage);

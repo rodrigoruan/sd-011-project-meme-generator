@@ -1,3 +1,33 @@
+body {
+  margin: 0px;
+  padding: 0px;
+}
+
 p {
   display: inline-block;
+}
+
+#meme-image-container {
+  width: 300px;
+  height: 300px;
+}
+
+#meme-image {
+  position: absolute;
+  height: 300px;
+  width: 300px;
+  padding: 0px;
+  margin: 0px;
+}
+
+#meme-text {
+  position: absolute;
+  width: 285px;
+  margin: 0px;
+  padding: 0px;
+  left: 15px;
+  top: 270px;
+  font-size: 25px;
+  color: black;
+  text-shadow: 3px 0px 3px white;
 }
