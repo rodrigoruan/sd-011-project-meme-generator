@@ -27,3 +27,15 @@
   text-shadow: rgb(0, 0, 0) 5px 5px 5px;
   font-size: 30px;
 }
+
+#water {
+  background-color: blue;
+}
+
+#earth {
+  background-color: green;
+}
+
+#fire {
+  background-color: red;
+}
