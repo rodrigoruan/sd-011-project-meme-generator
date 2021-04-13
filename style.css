@@ -12,6 +12,7 @@ button {
   font-size: 20px;
   padding: 5px 10px;
   margin: 15px 10px;
+  color: white;
 }
 
 #meme-image-container {
@@ -53,4 +54,16 @@ button {
 
 #meme-insert {
   margin: 10px 0;
+}
+
+.red {
+  background-color: red;
+}
+
+.blue {
+  background-color: blue;
+}
+
+.green {
+  background-color: green;
 }
