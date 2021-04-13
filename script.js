@@ -1,4 +1,4 @@
-const caixaDeTexto = document.querySelector('#text-imput');
+const caixaDeTexto = document.querySelector('#text-input');
 // const container = document.querySelector('#meme-image-container');
 const textoMeme = document.querySelector('#meme-text');
 
