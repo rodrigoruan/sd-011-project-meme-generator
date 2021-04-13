@@ -1,0 +1,10 @@
+#meme-text {
+    position: absolute;
+    color: white;
+    top: 350px;
+    text-align: center;
+}
+
+img {
+    width: 600px;
+}
