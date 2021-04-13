@@ -6,6 +6,10 @@ const memeImg = document.querySelector('#meme-image');
 const waterBtn = document.querySelector('#water');
 const fireBtn = document.querySelector('#fire');
 const earthBtn = document.querySelector('#earth');
+const meme1 = document.querySelector('#meme-1');
+const meme2 = document.querySelector('#meme-2');
+const meme3 = document.querySelector('#meme-3');
+const meme4 = document.querySelector('#meme-4');
 
 inputText.addEventListener('keyup', () => {
   let text = inputText.value;
@@ -31,4 +35,20 @@ waterBtn.addEventListener('click', () => {
 
 fireBtn.addEventListener('click', () => {
   container.style.border = '3px dashed red';
+});
+
+meme1.addEventListener('click', () => {
+  memeImg.src = 'imgs/meme1.png';
+});
+
+meme2.addEventListener('click', () => {
+  memeImg.src = 'imgs/meme2.png';
+});
+
+meme3.addEventListener('click', () => {
+  memeImg.src = 'imgs/meme3.png';
+});
+
+meme4.addEventListener('click', () => {
+  memeImg.src = 'imgs/meme4.png';
 });

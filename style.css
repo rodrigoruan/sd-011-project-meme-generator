@@ -6,6 +6,10 @@ body {
   background-color: #eceff4;
 }
 
+.meme {
+  cursor: pointer;
+}
+
 #meme-text {
   position: absolute;
   color: red;
@@ -73,4 +77,13 @@ button {
 img {
   width: 400px;
   height: 400px;
+}
+
+li {
+  display: inline-block;
+}
+
+li > img {
+  width: 70px;
+  height: 70px;
 }
