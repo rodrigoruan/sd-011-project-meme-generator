@@ -14,7 +14,7 @@ textInput.oninput = () => {
   } else {
     alert('too much characteres');
   }
-}
+};
 
 idMeme.addEventListener('change', (event) => {
   memeImage.src = URL.createObjectURL(event.target.files[0]);
