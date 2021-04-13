@@ -5,7 +5,9 @@ const memeImage = document.getElementById('meme-image');
 
 
 textInput.addEventListener('keyup', () => {
-  memeText.innerText = textInput.value;
+  if (textInput.value.length <= 60) {
+    memeText.innerText = textInput.value;
+  }
 });
 
 memeInsert.addEventListener('click', () => {
