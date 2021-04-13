@@ -3,22 +3,42 @@
   height: 500px;
   background-color: white;
   border: solid 1px black;
+  margin: auto;
 }
 
 #meme-text {
   text-shadow: 5px 5px 5px black;
   font-size: 30px;
   color: white;
-  background-color: azure;
   width: 450px;
-  position: absolute;
-  margin-top: 460px;
   margin-left: 25px;
+  position: absolute;
+  top: 45%;
+  display: inline-block;
+  word-wrap: break-word;
 }
 
 #meme-image {
   width: 500px;
   height: 500px;
   background-color: white;
-  position: absolute;
+}
+
+.img {
+  width: 500px;
+  height: 500px;
+}
+
+#fire {
+  background-color: red;
+}
+
+
+#water {
+  background-color: blue;
+}
+
+
+#earth {
+  background-color: green;
 }
