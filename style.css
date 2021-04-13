@@ -1,5 +1,4 @@
 img {
-  position: absolute;
   width: 500px;
   height: 500px;
 }
@@ -8,7 +7,7 @@ img {
   position: absolute;
   z-index: 1;
   color: white;
-  top: 380px;
+  top: 460px;
   text-align: center;
   text-shadow: 5px 5px 5px black;
   font-size: 30px;
@@ -21,4 +20,27 @@ img {
   border: black solid 1px;
   width: 500px;
   height: 500px;
+  margin: 20px auto;
+}
+
+body {
+  text-align: center;
+  background-color: #32CD32;
+}
+
+title {
+  display: block;
+  font-family: 'VT323', monospace;
+  font-size: 100px;
+}
+
+#benjaminButton {
+  display: none;
+}
+
+#text-input {
+  border-radius: 60%;
+  height: 60px;
+  /* background-color: black;
+  color: white; */
 }
