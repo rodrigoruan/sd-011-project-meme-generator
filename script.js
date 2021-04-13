@@ -42,13 +42,7 @@ textInput.addEventListener('keyup', () => {
 });
 
 memeInsert.addEventListener('click', () => {
-  if (memeImage.firstChild) {
-    memeImage.removeChild(memeImage.firstChild);
-  }
-  const imageMeme = document.createElement('img');
-  imageMeme.src = 'img1.jpg';
-  imageMeme.classList.add('meme-size');
-  memeImage.appendChild(imageMeme);
+  memeImage.src = 'img1.jpg';
 });
 
 for (let index = 1; index < 5; index += 1) {
@@ -61,14 +55,8 @@ for (let index = 1; index < 5; index += 1) {
 
 preMemeContainer.addEventListener('click', (event) => {
   const clickImg = event.target;
-  console.log(clickImg.parentElement);
   if (event.target.className === 'min-meme') {
-    if (memeImage.firstElementChild) {
-      memeImage.firstElementChild.className = 'min-meme';
-      preMemeContainer.appendChild(memeImage.firstElementChild);
-    }
-    clickImg.className = 'meme-size';
-    memeImage.appendChild(clickImg);
+    memeImage.src = clickImg.src;
   }
 });
 
