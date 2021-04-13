@@ -3,5 +3,5 @@ const caixaDeTexto = document.querySelector('#text-input');
 const textoMeme = document.querySelector('#meme-text');
 
 caixaDeTexto.addEventListener('keyup', () => {
-  textoMeme.innerHTML = caixaDeTexto.target.value;
+  textoMeme.innerHTML = caixaDeTexto.value;
 });
