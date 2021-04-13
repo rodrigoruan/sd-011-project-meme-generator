@@ -1,18 +1,9 @@
-* {
-  color: #252525;
-}
-
-body {
-  background-color: #eceff4;
-}
-
 .meme {
   cursor: pointer;
 }
 
 #meme-text {
   position: absolute;
-  color: red;
   text-shadow: 5px 5px 5px black;
   font-size: 30px;
   color: white;
@@ -23,6 +14,7 @@ li {
   list-style: none;
   display: inline-block;
   padding-right: 10px;
+  display: inline-block;
 }
 
 #text-input {
@@ -38,7 +30,7 @@ h1 {
 }
 
 input {
-  margin: 5px 0 15px 0;
+  margin: 5px 0 15px;
 }
 
 #earth {
@@ -77,10 +69,6 @@ button {
 img {
   width: 400px;
   height: 400px;
-}
-
-li {
-  display: inline-block;
 }
 
 li > img {
