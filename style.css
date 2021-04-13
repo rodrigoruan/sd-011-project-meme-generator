@@ -1,4 +1,4 @@
-#meme-image-container {
+.meme-image-container {
   margin: 30px;
   border: 1px solid black;
   width: 600px;
@@ -24,4 +24,28 @@
 input {
   margin: 30px;
   padding: 10px;
+}
+
+.fire {
+  border: 3px dashed red;
+}
+
+.water {
+  border: 5px double blue;
+}
+
+.earth {
+  border: 6px groove green;
+}
+
+#fire {
+  background-color: red;
+}
+
+#water {
+  background-color: blue;
+}
+
+#earth {
+  background-color: green;
 }
