@@ -3,7 +3,8 @@ const imageInput = document.querySelector('#meme-insert');
 const newImg = document.querySelector('#meme-image');
 const container = document.querySelector('#meme-image-container');
 const btnsBorder = document.querySelector('#border-btns');
-const miniatureMemes = document.querySelector('#memes-prontos');
+const memesProntos = document.querySelector('#memes-prontos').childNodes;
+const memesSection = document.querySelector('#memes-prontos');
 
 function showText() {
   const newP = document.querySelector('#meme-text');
@@ -37,4 +38,12 @@ function showMiniatureImage(event) {
   newImg.src = event.target.src;
 }
 
-miniatureMemes.addEventListener('click', showMiniatureImage);
+memesSection.addEventListener('click', showMiniatureImage);
+
+function changeUrl() {
+  for (let index = 0; index < memesProntos.length; index += 1) {
+    memesProntos[index].src = `${memesProntos[index].src}`;
+  }
+}
+
+changeUrl();
