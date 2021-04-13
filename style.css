@@ -14,8 +14,11 @@
 }
 
 #meme-text {
+  color: white;
+  font-size: 30px;
   position: absolute;
   z-index: 0;
+  text-shadow: 5px 5px 5px black;
 }
 
 input {
