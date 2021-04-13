@@ -8,25 +8,25 @@ const earthButton = document.getElementById('earth');
 const waterButton = document.getElementById('water');
 const memeImageContainer = document.getElementById('meme-image-container');
 
-function myChangeFunction() {
+textInput.oninput = () => {
   if (textInput.value.length < 62) {
-  memeText.innerText = textInput.value;
+    memeText.innerText = textInput.value;
   } else {
-    alert('too much characteres')
+    alert('too much characteres');
   }
 }
 
 idMeme.addEventListener('change', (event) => {
   memeImage.src = URL.createObjectURL(event.target.files[0]);
-  memeImage.onload = function() {
+  memeImage.onload = () => {
     URL.revokeObjectURL(memeImage.src);
-  }
+  };
 });
 
 memeReady.addEventListener('click', (event) => {
   const eventTarget = event.target;
-  console.log(eventTarget)
-  if(eventTarget.className === 'ready') {
+  console.log(eventTarget);
+  if (eventTarget.className === 'ready') {
     memeImage.src = (eventTarget.src);
   }
 });
@@ -35,11 +35,9 @@ fireButton.addEventListener('click', () => {
   memeImageContainer.style.border = '3px dashed rgb(255, 0, 0)';
 });
 
-
 waterButton.addEventListener('click', () => {
   memeImageContainer.style.border = '5px double  rgb(0, 0, 255)';
 });
-
 
 earthButton.addEventListener('click', () => {
   memeImageContainer.style.border = '6px groove rgb(0, 128, 0)';
