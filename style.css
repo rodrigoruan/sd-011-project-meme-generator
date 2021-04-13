@@ -1,0 +1,27 @@
+#meme-image-container {
+  margin-top: 20px;
+  border: 1px solid black;
+  width: 500px;
+  height: 500px;
+  background-color: white;
+}
+#meme-text {
+  color: white;
+  font-weight: 900;
+  font-size: 50px;
+  position: absolute;
+  display: inline-block;
+  max-width: 500px;
+  max-height: 500px;
+
+  text-transform: uppercase;
+  -webkit-text-stroke: 2px black;
+  font-family: Impact;
+  overflow-wrap: break-word;
+  text-align: center;
+}
+
+#meme-image-container img {
+  width: 500px;
+  height: 500px;
+}
