@@ -67,3 +67,17 @@ button {
 .green {
   background-color: green;
 }
+
+#memes-prontos {
+  margin: 20px 0;
+}
+
+#memes-prontos img {
+  width: 100px;
+  height: 100px;
+  margin-right: 20px;
+}
+
+#memes-prontos img:hover {
+  cursor: pointer;
+}

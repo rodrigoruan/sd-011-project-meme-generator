@@ -1,7 +1,9 @@
 const text = document.querySelector('#text-input');
 const imageInput = document.querySelector('#meme-insert');
+const newImg = document.querySelector('#meme-image');
 const container = document.querySelector('#meme-image-container');
 const btnsBorder = document.querySelector('#border-btns');
+const miniatureMemes = document.querySelector('#memes-prontos');
 
 function showText() {
   const newP = document.querySelector('#meme-text');
@@ -11,7 +13,6 @@ function showText() {
 text.addEventListener('keyup', showText);
 
 function showImage(event) {
-  const newImg = document.querySelector('#meme-image');
   newImg.src = URL.createObjectURL(event.target.files[0]);
 }
 
@@ -31,3 +32,9 @@ function addBorder(event) {
 }
 
 btnsBorder.addEventListener('click', addBorder);
+
+function showMiniatureImage(event) {
+  newImg.src = event.target.src;
+}
+
+miniatureMemes.addEventListener('click', showMiniatureImage);
