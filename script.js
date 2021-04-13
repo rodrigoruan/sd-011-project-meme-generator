@@ -2,6 +2,7 @@ const chooseFile = document.querySelector('#meme-insert');
 const memeImageContainer = document.querySelector('#meme-image-container');
 const textInput = document.querySelector('#text-input');
 const memeText = document.querySelector('#meme-text');
+const memeImage = document.querySelector('#meme-image');
 
 function addImage() {
   const uploadedImage = chooseFile.files;
@@ -37,3 +38,15 @@ function changeBorderEarth() {
 document.querySelector('#fire').addEventListener('click', changeBorderFire);
 document.querySelector('#water').addEventListener('click', changeBorderWater);
 document.querySelector('#earth').addEventListener('click', changeBorderEarth);
+
+//
+
+function selectMeme(event) {
+  const selectedImg = event.target.src;
+  memeImage.src = selectedImg;
+}
+
+document.querySelector('#meme-1').addEventListener('click', selectMeme);
+document.querySelector('#meme-2').addEventListener('click', selectMeme);
+document.querySelector('#meme-3').addEventListener('click', selectMeme);
+document.querySelector('#meme-4').addEventListener('click', selectMeme);
