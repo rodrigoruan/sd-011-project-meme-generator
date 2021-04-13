@@ -3,6 +3,7 @@ let button = document.querySelector('#benjaminButton');
 let text = document.querySelector('#meme-text');
 let newImage = document.querySelector('#meme-insert');
 let localImage = document.querySelector('#meme-image');
+let container = document.querySelector('#meme-image-container');
 
 function clickButton() {
   button.addEventListener('click', function() {
