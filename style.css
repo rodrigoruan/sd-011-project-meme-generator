@@ -10,10 +10,11 @@ p {
 }
 
 #meme-text {
-  position: absolute;
+  position: relative;
 }
 
-#image {
+#meme-image {
   width: 400px;
   height: 400px;
+  position: absolute;
 }
