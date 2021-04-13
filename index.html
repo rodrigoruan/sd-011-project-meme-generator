@@ -5,22 +5,39 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Righteous&display=swap"
+      rel="stylesheet"
+    />
     <title>MEME GENERATOR</title>
   </head>
-  <header id="header">
-    <h1>MEME GENERATOR</h1>
-  </header>
   <body>
     <main>
+      <header id="header">
+        <h1>MEME GENERATOR</h1>
+      </header>
       <section>
-        <input id="text-input" />
+        <input
+          id="text-input"
+          placeholder="Insira sua frase aqui"
+          maxlength="60"
+        />
         <input type="file" accept="image/*" id="meme-insert" />
+        <button id="locateFile">Escolher Foto</button>
       </section>
       <div id="meme-image-container">
         <div id="meme-image">
           <span id="meme-text"></span>
+          <img id="meme-png" hidden />
         </div>
       </div>
+      <section id="templates">
+        <img class="meme-templates" src="imgs/meme1.png" alt="" />
+        <img class="meme-templates" src="imgs/meme2.png" alt="" />
+        <img class="meme-templates" src="imgs/meme3.png" alt="" />
+        <img class="meme-templates" src="imgs/meme4.png" alt="" />
+      </section>
     </main>
   </body>
   <script src="script.js"></script>
