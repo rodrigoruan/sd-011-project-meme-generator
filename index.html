@@ -11,15 +11,21 @@
   <section class="container">
     <h1>Meme Generator</h1>
     <input id="test-input" type="text" maxlength="60" placeholder="Digite algo engraçado"/>
+    <input id="meme-insert" type="file" accept="image/*"/>
     <div id="meme-image-container">
         <p id="meme-text"></p>
-      <div id="meme-image">
-        <input id="meme-insert" type="file" accept="image/*"/>
-      </div>  
+      <img id="meme-image"/>
+      <button id="fire">Red</button>
+      <button id="water">Blue</button>
+      <button id="earth">Green</button>
+      <ul>
+        <li><img class="meme" id="meme-1" src="meme1.png" alt=""></li>
+        <li><img class="meme" id="meme-2" src="meme2.png" alt=""></li>
+        <li><img class="meme" id="meme-3" src="meme3.png" alt=""></li>
+        <li><img class="meme" id="meme-4" src="meme4.png" alt=""></li>
+      </ul>   
     </div>
   </section>
-
-
     <script src="script.js"></script>
 </body>
 </html>
