@@ -8,4 +8,12 @@
   width: 400px;
   height: 150px;
   border: 1px solid black;
+  z-index: 2;
+  position: absolute;
+}
+
+#meme-image {
+  width: inherit;
+  height: inherit;
+  z-index: 1;
 }
