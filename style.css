@@ -8,3 +8,12 @@
 p {
   display: inline-block;
 }
+
+#meme-text {
+  position: absolute;
+}
+
+#image {
+  width: 400px;
+  height: 400px;
+}
