@@ -10,7 +10,6 @@ textInput.onkeyup = function createMemeText() {
 // 2 - O site deve permitir que quem usa faça upload de uma imagem de seu computador.
 
 const memeInsert = document.querySelector('#meme-insert');
-// const memeImageContainer = document.querySelector('#meme-image-container');
 const divImage = document.querySelector('#meme-image');
 
 function uploadImage(event) {
@@ -22,3 +21,19 @@ function uploadImage(event) {
 }
 
 memeInsert.addEventListener('input', uploadImage);
+
+const memeImageContainer = document.querySelector('#meme-image-container');
+const fireButton = document.querySelector('#fire');
+fireButton.onclick = function () {
+  memeImageContainer.style.border = '3px dashed red';
+};
+
+const waterButton = document.querySelector('#water');
+waterButton.onclick = function () {
+  memeImageContainer.style.border = '5px double blue';
+};
+
+const earthButton = document.querySelector('#earth');
+earthButton.onclick = function () {
+  memeImageContainer.style.border = '6px groove green';
+};

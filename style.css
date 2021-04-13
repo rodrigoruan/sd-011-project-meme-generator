@@ -8,7 +8,6 @@
 #meme-text {
   max-width: 500px;
   max-height: 500px;
-  border: 1px solid black;
   z-index: 2;
   position: absolute;
   font-size: 30px;
@@ -27,4 +26,16 @@
   width: inherit;
   height: inherit;
   z-index: 1;
+}
+
+#water {
+  background-color: blue;
+}
+
+#fire {
+  background-color: red;
+}
+
+#earth {
+  background-color: green;
 }
