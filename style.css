@@ -2,7 +2,8 @@
   width: 200px;
   height: 200px;
   position: absolute;
-  border: solid;
+  background-color: white;
+  border: black solid 1px;
 }
 
 img {
