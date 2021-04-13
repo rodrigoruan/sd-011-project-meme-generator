@@ -19,7 +19,7 @@ imageInput.addEventListener('change', showImage);
 
 function addBorder(event) {
   const btn = event.target;
-  container.style.border = `2px solid ${btn.className}`;
+  container.style.borderColor = btn.className;
 }
 
 btnsBorder.addEventListener('click', addBorder);
