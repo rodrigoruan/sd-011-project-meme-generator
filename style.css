@@ -1,0 +1,11 @@
+#meme-image-container {
+  margin-top: 30px;
+  position: relative;
+  width: fit-content;
+  max-width: 400px;
+}
+
+#meme-image {
+  width: 100%;
+  height: 100%;
+}
