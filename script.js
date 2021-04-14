@@ -18,16 +18,15 @@ function insertImage() {
 }
 
 function changeImgBorder(borderStyle) {
-    if (borderStyle === fireBtn) {
-      memeImageContainer.classList.remove('default', 'water', 'earth');
-      memeImageContainer.classList.add('fire');
-    } else if (borderStyle === waterBtn) {
-      memeImageContainer.classList.remove('default', 'fire', 'earth');
-      memeImageContainer.classList.add('water');
-    } else if (borderStyle === earthBtn) {
-      memeImageContainer.classList.remove('default', 'water', 'fire');
-      memeImageContainer.classList.add('earth');
-    }
+  if (borderStyle === fireBtn) {
+    memeImageContainer.classList.remove('default', 'water', 'earth');
+    memeImageContainer.classList.add('fire');
+  } else if (borderStyle === waterBtn) {
+    memeImageContainer.classList.remove('default', 'fire', 'earth');
+    memeImageContainer.classList.add('water');
+  } else if (borderStyle === earthBtn) {
+    memeImageContainer.classList.remove('default', 'water', 'fire');
+    memeImageContainer.classList.add('earth');
   }
 }
 
