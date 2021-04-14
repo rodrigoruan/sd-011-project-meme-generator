@@ -3,6 +3,6 @@ const memeText = document.querySelector('#meme-text');
 
 [textInput].forEach((item) => {
   item.addEventListener('keyup', () => {
-    memeText.innerText = textInput.nodeValue;
+    memeText.innerText = textInput.value;
   });
 });
