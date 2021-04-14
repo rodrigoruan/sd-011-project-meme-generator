@@ -6,7 +6,6 @@ const memeUpload = document.querySelector('#meme-upload');
 
 textInput.addEventListener('keyup', function () {
   memeText.innerText = textInput.value;
-}) 
 });
 
 memeInsert.addEventListener('click', function () {
