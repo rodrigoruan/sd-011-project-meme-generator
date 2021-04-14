@@ -1,3 +1,7 @@
+body {
+  font-family: sans-serif;
+}
+
 #meme-image-container {
   margin-top: 30px;
   position: relative;
@@ -17,4 +21,29 @@
   text-shadow: 5px 5px 5px black;
   font-size: 30px;
   color: white;
+}
+
+#fire {
+  background-color: red;
+}
+
+#water {
+  background-color: blue;
+}
+
+#earth {
+  background-color: green;
+}
+
+#suggestions {
+  width: fit-content;
+}
+
+#suggestions div {
+  display: inline-block;
+  height: 150px;
+}
+
+#suggestions div img {
+  height: 100%;
 }
