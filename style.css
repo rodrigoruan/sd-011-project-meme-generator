@@ -22,10 +22,23 @@ img {
   max-width: 500px;
   max-height: 500px;
   position: absolute;
-  color: red;
+  color: white;
   font-size: 30px;
   display: inline-block;
   word-wrap: break-word;
   z-index: 2;
+  text-shadow: 5px 5px 5px black;;
+}
+
+#fire {
+  background-color: red;
+}
+
+#water {
+  background-color: blue;
+}
+
+#earth {
+  background-color: green;
 }
 
