@@ -42,3 +42,19 @@ img {
   background-color: green;
 }
 
+.img-meme {
+  height: 100px;
+  width: 100px;
+}
+
+.memes {
+  width: 100%;
+  padding-top: 50px;
+  display: inline-block;
+  text-align: center;
+}
+
+.btns {
+  
+  text-align: center;
+}

@@ -5,6 +5,7 @@ const imageContainer = document.querySelector('#meme-image')
 const btnFire = document.querySelector('#fire');
 const btnWater = document.querySelector('#water');
 const btnEarth = document.querySelector('#earth');
+const memeDiv = document.querySelector('.memes');
 
 function writeMeme() {
   inputMeme.addEventListener('keyup', () => {    
@@ -16,6 +17,7 @@ function writeMeme() {
 writeMeme();
 
 function showImage(event2) {
+  imageContainer.innerHTML = '';
   const imageMeme = document.createElement('img');
   imageMeme.classList.add('meme-size');
   imageMeme.src = URL.createObjectURL(event2.target.files[0]);
@@ -35,12 +37,10 @@ btnEarth.addEventListener('click', () => {
   photoDiv.style.border = '6px groove green' 
 })
 
-
-
-
-  
-
-
-
-
-
+memeDiv.addEventListener('click', (event3) => {
+  imageContainer.innerHTML = '';
+  const imageMeme2 = document.createElement('img');  
+  const memeSelected = event3.target;
+  imageMeme2.src = memeSelected.src;
+  imageContainer.appendChild(imageMeme2)
+})
