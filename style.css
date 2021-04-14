@@ -1,15 +1,17 @@
-* {
+body {
   padding: 0;
   margin: 0;
-  box-sizing: border-box;
   color: antiquewhite;
   background-color: midnightblue;
 }
 
 header {
-  position: sticky;
   text-align: center;
   margin-bottom: 30px;
+}
+
+p {
+  text-align: center;
 }
 
 header h1 {
@@ -18,10 +20,8 @@ header h1 {
 }
 
 main {
-  min-height: 65vh;
-  margin-left: auto;
-  margin-right: auto;
-  max-width: 80%;
+  margin: auto;
+  display: block;
 }
 
 footer {
@@ -33,14 +33,35 @@ footer {
 
 a {
   color: white;
-  font-weight: bolder;
+  font-weight: 900;
+}
+
+button {
+  display: inline-block;
+  margin: 10px;
+  padding: 12px 40px;
+  border-radius: 5px;
+  border: 1px solid transparent;
+  font-size: 20px;
+  font-weight: 500;
+  cursor: pointer;
+  color: antiquewhite;
+  margin: 5px;
+  font-variant: small-caps;
+  box-shadow: -5px -5px black;
+}
+
+#buttons {
+  display: block;
+  margin: auto;
+  width: 23.06%;
 }
 
 #text-input {
   padding: 5px;
   margin-bottom: 10px;
   background-color: white;
-  color: midnightblue
+  color: midnightblue;
 }
 
 #file-input {
@@ -48,23 +69,57 @@ a {
   margin-bottom: 10px;
 }
 
-button {
-  padding: 5px;
-  background-color: antiquewhite;
-  color: midnightblue;
-  margin: 5px;
+#meme-image-container {
+  background-color: white;
+  width: 400px;
+  height: 400px;
+  margin: auto;
 }
 
-#meme-mage-container {
-  position: relative;
-  background-color: white;
-  border: solid black 1px;
-  max-width: 80%;
+#meme-image {
+  width: 400px;
+  height: 400px;
+  position: absolute;
 }
 
 #meme-text {
-  position: absolute;
-  text-shadow: black 5px 5px 5px;
-  font-size: 30px;
+  position: relative;
   color: white;
+  font-size: 30px;
+  text-shadow: 5px 5px 5px black;
+}
+
+#fire {
+  background-color: red;
+  padding: 10px;
+  margin: 15px;
+}
+
+#water {
+  background-color: blue;
+  padding: 10px;
+  margin: 15px;
+}
+
+#earth {
+  background-color: green;
+  padding: 10px;
+  margin: 15px;
+}
+
+#meme-1, #meme-2, #meme-3, #meme-4 {
+  margin: 15px;
+  width: 100px;
+  height: 100px;
+}
+
+#miniaturas {
+  display: block;
+  margin: auto;
+  width: 41.8%;
+}
+
+/* péssimo, eu sei */
+.space {
+  margin: 30px;
 }
