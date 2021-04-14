@@ -1,6 +1,7 @@
 #meme-image-container {
-  border:5px solid black;
+  border:1px solid black;
   padding: 200px;
+  background-color: white;
 }
 
 #meme-text {
