@@ -46,15 +46,13 @@ button {
   font-weight: 500;
   cursor: pointer;
   color: antiquewhite;
-  margin: 5px;
   font-variant: small-caps;
   box-shadow: -5px -5px black;
 }
 
 #buttons {
-  display: block;
-  margin: auto;
-  width: 23.06%;
+  display: flex;
+  justify-content: center;
 }
 
 #text-input {
@@ -107,16 +105,15 @@ button {
   margin: 15px;
 }
 
-#meme-1, #meme-2, #meme-3, #meme-4 {
+#meme-1 , #meme-2 , #meme-3 , #meme-4 {
   margin: 15px;
   width: 100px;
   height: 100px;
 }
 
 #miniaturas {
-  display: block;
-  margin: auto;
-  width: 41.8%;
+  display: flex;
+  justify-content: center;
 }
 
 /* péssimo, eu sei */
