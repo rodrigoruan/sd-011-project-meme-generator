@@ -5,7 +5,7 @@ const memeImage = document.querySelector('#meme-image');
 
 [textInput].forEach((item) => {
   item.addEventListener('keyup', () => {
-    memeText.innerText = textInput.value;
+    memeText.innerHTML = textInput.value;
   });
 });
 

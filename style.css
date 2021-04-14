@@ -1,7 +1,11 @@
 #meme-image-container {
-  position: relative;
+  width: 300px;
 }
-  
+
 #meme-text {
-  position: absolute;
+  width: 100px;
+}
+
+.default-border {
+  border: 1px solid black;
 }
