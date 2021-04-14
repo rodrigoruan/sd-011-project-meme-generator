@@ -1,6 +1,6 @@
 :root {
 
-  --color-trybe-green: rgba(3, 107, 82, 1);
+  --color-trybe-green: rgba(3 , 107 , 82 , 1);
 }
 
 * {
@@ -43,4 +43,7 @@ main {
 #meme-text {
   position: absolute;
   bottom: 0;
+  text-shadow: 5px 5px 5px black;
+  font-size: 30px;
+  color: white;
 }
