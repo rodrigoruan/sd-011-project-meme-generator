@@ -6,6 +6,10 @@ const fireButton = document.getElementById('fire');
 const waterButton = document.getElementById('water');
 const earthButton = document.getElementById('earth');
 const memeArea = document.getElementById('meme-image-container');
+const clickImg1 = document.getElementById('meme-1');
+const clickImg2 = document.getElementById('meme-2');
+const clickImg3 = document.getElementById('meme-3');
+const clickImg4 = document.getElementById('meme-4');
 
 // Cria um parágrafo de texto e insere dentro da div da imagem
 function createMemeText() {
@@ -55,3 +59,35 @@ function earthBorder() {
   });
 }
 earthBorder();
+
+function click() {
+  clickImg1.addEventListener('click', () => {
+    if (memeImage.src === 'imgs/meme1.png') {
+      memeImage.src = '#';
+    } else {
+      memeImage.src = 'imgs/meme1.png';
+    }
+  });
+  clickImg2.addEventListener('click', () => {
+    if (memeImage.src === 'imgs/meme2.png') {
+      memeImage.src = '#';
+    } else {
+      memeImage.src = 'imgs/meme2.png';
+    }
+  });
+  clickImg3.addEventListener('click', () => {
+    if (memeImage.src === 'imgs/meme3.png') {
+      memeImage.src = '#';
+    } else {
+      memeImage.src = 'imgs/meme3.png';
+    }
+  });
+  clickImg4.addEventListener('click', () => {
+    if (memeImage.src === 'images/meme4.png') {
+      memeImage.src = '#';
+    } else {
+      memeImage.src = 'imgs/meme4.png';
+    }
+  });
+}
+click();

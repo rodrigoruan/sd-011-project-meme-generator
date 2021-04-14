@@ -12,6 +12,7 @@ main {
   position: relative;
   height: 400px;
   margin: 50px auto;
+  background-color: white;
 }
 
 #meme-text {
@@ -22,7 +23,7 @@ main {
   font-size: 30px;
   text-shadow: 5px 5px 5px black;
   z-index: 1;
-  font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+  font-family: Impact, Haettenschweiler, sans-serif;
   font-weight: 700;
 }
 
@@ -65,4 +66,12 @@ button {
   width: 100px;
   color: white;
   border-radius: 5px;
+  outline: none;
+  font-weight: 700;
+  letter-spacing: 1px;
+}
+
+.imgs {
+  width: 130px;
+  height: 80px;
 }
