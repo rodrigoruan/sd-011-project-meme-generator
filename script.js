@@ -12,23 +12,21 @@ function insertImage() {
   const newImage = document.createElement('img');
   newImage.alt = 'Imagem recebida por upload para fazer memes';
   newImage.id = 'meme-image';
-  newImage.classList.add('default');
   newImage.src = URL.createObjectURL(uploadedImage[0]);
   memeImageContainer.appendChild(newImage);
+  memeImageContainer.classList.add('default');
 }
 
 function changeImgBorder(borderStyle) {
-  const memeImage = document.querySelector('#meme-image');
-  if (memeImage !== null) {
     if (borderStyle === fireBtn) {
-      memeImage.classList.remove('default', 'water', 'earth');
-      memeImage.classList.add('fire');
+      memeImageContainer.classList.remove('default', 'water', 'earth');
+      memeImageContainer.classList.add('fire');
     } else if (borderStyle === waterBtn) {
-      memeImage.classList.remove('default', 'fire', 'earth');
-      memeImage.classList.add('water');
+      memeImageContainer.classList.remove('default', 'fire', 'earth');
+      memeImageContainer.classList.add('water');
     } else if (borderStyle === earthBtn) {
-      memeImage.classList.remove('default', 'water', 'fire');
-      memeImage.classList.add('earth');
+      memeImageContainer.classList.remove('default', 'water', 'fire');
+      memeImageContainer.classList.add('earth');
     }
   }
 }
