@@ -1,10 +1,13 @@
 const inputBox = document.getElementById('text-input');
-const memeContainer = document.getElementById('meme-image-container');
 const memeText = document.getElementById('meme-text');
+const imageContainer = document.getElementById('meme-image-container');
 const inputImage = document.getElementById('meme-insert');
 const outputImage = document.getElementById('meme-image');
 const locateFileButton = document.getElementById('locateFile');
 const memeTemplate = document.getElementsByClassName('meme-templates');
+const fireButton = document.getElementById('fire');
+const waterButton = document.getElementById('water');
+const earthButton = document.getElementById('earth');
 
 function textInBox() {
   memeText.innerText = inputBox.value;
@@ -32,3 +35,32 @@ function useTemplate() {
   }
 }
 useTemplate();
+
+imageContainer.style.border = '1px solid black';
+
+fireButton.addEventListener('click', () => {
+  imageContainer.style.removeProperty('border');
+  if (imageContainer.classList.contains('fireBorder')) {
+    imageContainer.classList.remove('fireBorder');
+  } else {
+    imageContainer.setAttribute('class', 'fireBorder');
+  }
+});
+
+waterButton.addEventListener('click', () => {
+  imageContainer.style.removeProperty('border');
+  if (imageContainer.classList.contains('waterBorder')) {
+    imageContainer.classList.remove('waterBorder');
+  } else {
+    imageContainer.setAttribute('class', 'waterBorder');
+  }
+});
+
+earthButton.addEventListener('click', () => {
+  imageContainer.style.removeProperty('border');
+  if (imageContainer.classList.contains('earthBorder')) {
+    imageContainer.classList.remove('earthBorder');
+  } else {
+    imageContainer.setAttribute('class', 'earthBorder');
+  }
+});
