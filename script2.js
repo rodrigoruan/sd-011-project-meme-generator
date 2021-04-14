@@ -5,8 +5,7 @@ const memeImageInput = document.querySelector('#meme-insert');
 const imageContainer = document.querySelector('#meme-image');
 
 // retorna texto inserido em text-input
-inputText.addEventListener('keydown', function () {
-    console.log(inputText.value);
+inputText.addEventListener('keyup', function () {
     memeText.innerText = inputText.value;
 });
 
@@ -16,7 +15,6 @@ memeImageInput.addEventListener('change', function() {
 
     if (file) {
         const reader = new FileReader();
-        console.log(reader);
 
         reader.addEventListener('load', function() {
             imageContainer.setAttribute('src', this.result);
