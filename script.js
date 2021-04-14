@@ -11,7 +11,7 @@ const memeImage = document.querySelector('#meme-image');
 
 [memeInsert].forEach((item) => {
   item.addEventListener('change', () => {
-  const uploadImage = memeInsert.files;
-  memeImage.src = URL.createObjectURL(uploadImage[0]);
+    const uploadImage = memeInsert.files;
+    memeImage.src = URL.createObjectURL(uploadImage[0]);
   });
 });
