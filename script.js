@@ -14,7 +14,8 @@ const clickImg4 = document.getElementById('meme-4');
 // Cria um parágrafo de texto e insere dentro da div da imagem
 function createMemeText() {
   textInput.addEventListener('keyup', () => {
-    memeText.innerText = textInput.value;
+    let text = textInput.value
+    memeText.innerText = text.toUpperCase();
   });
 }
 createMemeText();
