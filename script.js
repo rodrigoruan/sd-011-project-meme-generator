@@ -7,6 +7,6 @@ function printText() {
     console.log(input.value);
     p.innerText = input.value;
   });
-
 }
 printText();
+
