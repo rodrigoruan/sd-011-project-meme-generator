@@ -26,6 +26,13 @@ main {
   align-items: center;
 }
 
+button {
+  color: white;
+  font-weight: 700;
+  padding: 0.5em;
+  border: none;
+}
+
 #meme-image-container {
   position: relative;
   width: 400px;
@@ -36,8 +43,9 @@ main {
 }
 
 #meme-image {
-  width: 400px;
-  height: 400px;
+  position: absolute;
+  width: 100%;
+  height: 100%;
 }
 
 #meme-text {
@@ -46,4 +54,16 @@ main {
   text-shadow: 5px 5px 5px black;
   font-size: 30px;
   color: white;
+}
+
+#fire {
+  background-color: red;
+}
+
+#water {
+  background-color: blue;
+}
+
+#earth {
+  background-color: green;
 }

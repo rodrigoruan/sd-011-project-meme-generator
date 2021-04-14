@@ -1,7 +1,9 @@
 const inputText = document.getElementById('text-input');
 const inputFile = document.getElementById('meme-insert');
+const container = document.getElementById('meme-image-container');
 const imgMeme = document.getElementById('meme-image');
 const spanMemeText = document.getElementById('meme-text');
+const bordersContainer = document.getElementById('borders-container');
 
 function setMemeText() {
   const text = inputText.value;
@@ -24,9 +26,29 @@ function setMemeImage() {
   else imgMeme.src = '';
 }
 
+function changeBorder({ target }) {
+  if (target.tagName === 'BUTTON') {
+    switch (target.id) {
+    case 'fire':
+      container.style.border = '3px dashed red';
+      break;
+    case 'water':
+      container.style.border = '5px double blue';
+      break;
+    case 'earth':
+      container.style.border = '6px groove green';
+      break;
+
+    default:
+      break;
+    }
+  }
+}
+
 function onLoad() {
   inputText.addEventListener('input', setMemeText);
   inputFile.addEventListener('change', setMemeImage);
+  bordersContainer.addEventListener('click', changeBorder);
 }
 
 window.onload = onLoad;
