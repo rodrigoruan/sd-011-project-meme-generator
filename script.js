@@ -19,7 +19,6 @@ writeMeme();
 function showImage(event2) {
   imageContainer.innerHTML = '';
   imageContainer.src = URL.createObjectURL(event2.target.files[0]);
-  console.log(event2.target.files);
 }
 
 memeInsert.addEventListener('change', showImage);
