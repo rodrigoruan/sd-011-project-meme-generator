@@ -2,10 +2,10 @@ const inputText = document.querySelector('#text-input');
 const memeContainer = document.querySelector('#meme-image-container');
 const memeText = document.querySelector('#meme-text');
 const memeImageInput = document.querySelector('#meme-insert');
-const imageContainer = document.querySelector('.meme-image');
+const imageContainer = document.querySelector('#meme-image');
 
 // retorna texto inserido em text-input
-inputText.addEventListener('change', function () {
+inputText.addEventListener('keydown', function () {
     console.log(inputText.value);
     memeText.innerText = inputText.value;
 });
