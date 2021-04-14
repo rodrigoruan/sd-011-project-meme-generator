@@ -1,6 +1,7 @@
 const textInput = document.querySelector('#text-input');
 const memeText = document.querySelector('#meme-text');
 const memeImageContainer = document.querySelector('#meme-image-container');
+const memeImage = document.querySelector('#meme-image');
 const memeUploadBtn = document.querySelector('#meme-upload');
 const memeInsertBtn = document.querySelector('#meme-insert');
 const fireBtn = document.querySelector('#fire');
@@ -9,12 +10,9 @@ const earthBtn = document.querySelector('#earth');
 
 function insertImage() {
   const uploadedImage = memeUploadBtn.files;
-  const newImage = document.createElement('img');
-  newImage.alt = 'Imagem recebida por upload para fazer memes';
-  newImage.id = 'meme-image';
-  newImage.src = URL.createObjectURL(uploadedImage[0]);
-  memeImageContainer.appendChild(newImage);
-  memeImageContainer.classList.add('default');
+  memeImage.alt = 'Imagem recebida por upload para fazer memes';
+  memeImage.src = URL.createObjectURL(uploadedImage[0]);
+  memeImageContainer.appendChild(memeImage);
 }
 
 function changeImgBorder(borderStyle) {
