@@ -1,5 +1,5 @@
 html {
-  background-image: url(/imgs/giphy-downsized-large.gif);
+  background-image: url('/imgs/giphy-downsized-large.gif');
   background-size: cover;
 }
 
@@ -47,18 +47,21 @@ p {
   background-color: red;
   border: solid red;
   border-radius: 8px;
+  color: white;
 }
 
 #water {
   background-color: blue;
   border: solid blue;
   border-radius: 8px;
+  color: white;
 }
 
 #earth {
   background-color: green;
   border: solid green;
   border-radius: 8px;
+  color: white;
 }
 
 #meme-1 , #meme-2 , #meme-3 , #meme-4 {
