@@ -1,9 +1,12 @@
 #meme-image-container {
   width: 300px;
+  height: auto;
+  min-height: 50px;
 }
 
 #meme-text {
   width: 100px;
+  position: absolute;
 }
 
 .default-border {
