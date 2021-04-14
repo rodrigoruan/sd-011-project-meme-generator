@@ -27,7 +27,7 @@ img {
   display: inline-block;
   word-wrap: break-word;
   z-index: 2;
-  text-shadow: 5px 5px 5px black;;
+  text-shadow: 5px 5px 5px black;
 }
 
 #fire {
@@ -55,6 +55,5 @@ img {
 }
 
 .btns {
-  
   text-align: center;
 }
