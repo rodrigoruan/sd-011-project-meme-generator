@@ -1,76 +1,89 @@
-.meme {
-    cursor: pointer;
-}
-
-#meme-image-container{
-    border: 1px solid black;
-    max-width: 400px;
-    max-height: 400px;
+html {
     background-color: white;
+  }
+
+  h1 {
+    margin-top: 0;
+}
+  
+  body {
     text-align: center;
-    margin: 0 auto;
-}
-
-#meme-text {
-    text-shadow: 5px 5px 5px black;
-    font-size: 30px;
-    color: white;
-    position: absolute;
-    max-width: 400px;
-}
-
-li {
-    list-style: none;
-    display: inline-block;
-    padding-right: 10px;
-}
-
-#text-input {
-    margin-left: 70px;
-}
-
-input {
-    margin: 5px 0 15px;
-}
-
-.conteiner {
-    text-align: center;
-}
-
-hi {
-    font-size: 30px;
-}
-
-#fire {
-    background-color: red;
     border: 1px solid black;
-    border-radius: 4px;
-}
-
-#water {
-    background-color: blue;
+    width: 60%;
+    margin: auto;
+    margin-top: 10px;
+    background-color: white;
+    box-shadow: 20px 20px 10px rgb(235 , 235 , 235);
+  }
+  
+  .meme-image-container {
     border: 1px solid black;
-    border-radius: 4px;
-}
-
-#earth {
-    background-color: green;
-    border: 1px solid black;
-    border-radius: 4px;
-}
-
-button {
-    margin: 5px 10px;
-    padding: 5px 20px;
-    color: white;
-}
-
-img {
     width: 400px;
     height: 400px;
-}
-
-li > img {
-    width: 70px;
-    height: 70px;
-}
+    background-color: white;
+    margin: auto;
+  }
+  
+  #meme-image {
+    width: 400px;
+    height: 400px;
+    z-index: 0;
+  }
+  
+  #meme-text {
+    color: white;
+    font-size: 30px;
+    position: absolute;
+    z-index: 1;
+    text-shadow: 5px 5px 5px black;
+    margin-top: 450px;
+    font-family: Impact , Haettenschweiler , sans-serif;
+  }
+  
+  input {
+    margin: 10px;
+    padding: 5px;
+  }
+  
+  .fire {
+    border: 3px dashed red;
+  }
+  
+  .water {
+    border: 5px double blue;
+  }
+  
+  .earth {
+    border: 6px groove green;
+  }
+  
+  #fire {
+    background-color: red;
+  }
+  
+  #water {
+    background-color: blue;
+  }
+  
+  #earth {
+    background-color: green;
+  }
+  
+  .img-meme {
+    width: 150px;
+    height: 150px;
+    padding: 10px;
+    border-radius: 50px;
+  }
+  
+  button {
+    display: inline-block;
+    margin: 10px;
+    padding: 12px 40px;
+    border-radius: 5px;
+    border: 1px solid transparent;
+    font-size: 15px;
+    font-weight: 400;
+    color: white;
+    cursor: pointer;
+  }

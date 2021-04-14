@@ -1,53 +1,51 @@
 const inputText = document.querySelector('#text-input');
-const container = document.querySelector('#meme-image-container');
-const memeText = document.querySelector('#meme-text');
-const memeImg = document.querySelector('#meme-image');
-const waterBtn = document.querySelector('#water');
-const fireBtn = document.querySelector('#fire');
-const earthBtn = document.querySelector('#earth');
-const meme1 = document.querySelector('#meme-1');
-const meme2 = document.querySelector('#meme-2');
-const meme3 = document.querySelector('#meme-3');
-const meme4 = document.querySelector('#meme-4');
-const memeInsert = document.querySelector('#meme-insert');
-const output = document.getElementById('meme-image');
+const inputFile = document.querySelector('#meme-insert');
+const memeContainerText = document.querySelector('#meme-text');
+const memeContainerImg = document.querySelector('#meme-image');
+const memeContainer = document.querySelector('#meme-image-container');
+const imgMeme = document.querySelector('#img-meme');
+const btnFire = document.querySelector('#fire');
+const btnWater = document.querySelector('#water');
+const btnEarth = document.querySelector('#earth');
+const lintChato = 'meme-image-container';
+
 inputText.addEventListener('keyup', () => {
-  const text = inputText.value;
-  memeText.innerText = text;
+  memeContainerText.innerText = inputText.value;
 });
 
-memeInsert.onchange = (event) => {
-  const reader = new FileReader();
-  reader.onload = () => {
-    output.src = reader.result;
-  };
-  reader.readAsDataURL(event.target.files[0]);
-};
-
-earthBtn.addEventListener('click', () => {
-  container.style.border = '6px groove green';
+inputFile.addEventListener('input', () => {
+  const urlImage = URL.createObjectURL(inputFile.files[0]);
+  memeContainerImg.setAttribute('src', urlImage);
 });
 
-waterBtn.addEventListener('click', () => {
-  container.style.border = '5px double blue';
+btnFire.addEventListener('click', () => {
+  if (memeContainer.classList !== null) memeContainer.removeAttribute('class');
+  memeContainer.classList.add('fire', lintChato);
 });
 
-fireBtn.addEventListener('click', () => {
-  container.style.border = '3px dashed red';
+btnWater.addEventListener('click', () => {
+  if (memeContainer.classList !== null) memeContainer.removeAttribute('class');
+  memeContainer.classList.add('water', lintChato);
 });
 
-meme1.addEventListener('click', () => {
-  memeImg.src = 'imgs/meme1.png';
+btnEarth.addEventListener('click', () => {
+  if (memeContainer.classList !== null) memeContainer.removeAttribute('class');
+  memeContainer.classList.add('earth', lintChato);
 });
 
-meme2.addEventListener('click', () => {
-  memeImg.src = 'imgs/meme2.png';
-});
+function indexOfNode(element) {
+  const index = [].indexOf.call(element.parentNode.childNodes, element);
+  return index;
+}
 
-meme3.addEventListener('click', () => {
-  memeImg.src = 'imgs/meme3.png';
-});
+function setMeme(event) {
+  const elementMeme = event.target;
+  const elementIndex = indexOfNode(elementMeme);
+  const urlMeme = elementMeme.parentNode.childNodes[elementIndex].getAttribute(
+    'src',
+  );
+  console.log(urlMeme);
+  memeContainerImg.setAttribute('src', urlMeme);
+}
 
-meme4.addEventListener('click', () => {
-  memeImg.src = 'imgs/meme4.png';
-});
+imgMeme.addEventListener('click', setMeme);
