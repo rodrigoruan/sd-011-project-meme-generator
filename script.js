@@ -4,6 +4,7 @@ const container = document.getElementById('meme-image-container');
 const imgMeme = document.getElementById('meme-image');
 const spanMemeText = document.getElementById('meme-text');
 const bordersContainer = document.getElementById('borders-container');
+const miniatures = document.getElementById('miniatures');
 
 function setMemeText() {
   const text = inputText.value;
@@ -45,10 +46,15 @@ function changeBorder({ target }) {
   }
 }
 
+function setMiniatureMemeImage({ target }) {
+  if (target.tagName === 'IMG') imgMeme.src = target.src.slice(-15);
+}
+
 function onLoad() {
   inputText.addEventListener('input', setMemeText);
   inputFile.addEventListener('change', setMemeImage);
   bordersContainer.addEventListener('click', changeBorder);
+  miniatures.addEventListener('click', setMiniatureMemeImage);
 }
 
 window.onload = onLoad;
