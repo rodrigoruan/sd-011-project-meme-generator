@@ -10,31 +10,30 @@ const meme2 = document.querySelector('#meme-2');
 const meme3 = document.querySelector('#meme-3');
 const meme4 = document.querySelector('#meme-4');
 const memeInsert = document.querySelector('#meme-insert');
-const output = document.getElementById('meem-image');
-
+const output = document.getElementById('meme-image');
 inputText.addEventListener('keyup', () => {
-    const text = inputText.nodeValue;
-    memeText.innerText = text;
+  const text = inputText.value;
+  memeText.innerText = text;
 });
 
 memeInsert.onchange = (event) => {
-    const reader = new FileReader();
-    reader.onload = () => {
-        output.src = reader.result;
-    };
-    reader.readAsDataURL(event.target.files[0]);
+  const reader = new FileReader();
+  reader.onload = () => {
+    output.src = reader.result;
+  };
+  reader.readAsDataURL(event.target.files[0]);
 };
 
-fireBtn.addEventListener('click', () => {
-    container.style.border = '3px dashed red';
+earthBtn.addEventListener('click', () => {
+  container.style.border = '6px groove green';
 });
 
 waterBtn.addEventListener('click', () => {
-    container.style.border = '5px double blue';
-}); 
+  container.style.border = '5px double blue';
+});
 
-earthBtn.addEventListener('click', () => {
-    container.getElementsByClassName.border = '6px groove green';
+fireBtn.addEventListener('click', () => {
+  container.style.border = '3px dashed red';
 });
 
 meme1.addEventListener('click', () => {
