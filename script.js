@@ -17,11 +17,9 @@ function writeMeme() {
 writeMeme();
 
 function showImage(event2) {
-  imageContainer.innerHTML = '';
-  const imageMeme = document.createElement('img');
-  imageMeme.classList.add('meme-size');
-  imageMeme.src = URL.createObjectURL(event2.target.files[0]);
-  imageContainer.appendChild(imageMeme);  
+  imageContainer.innerHTML = ''; 
+  imageContainer.src = URL.createObjectURL(event2.target.files[0]);
+  console.log(event2.target.files)
 }
 
 memeInsert.addEventListener('change', showImage);
@@ -38,9 +36,5 @@ btnEarth.addEventListener('click', () => {
 })
 
 memeDiv.addEventListener('click', (event3) => {
-  imageContainer.innerHTML = '';
-  const imageMeme2 = document.createElement('img');  
-  const memeSelected = event3.target;
-  imageMeme2.src = memeSelected.src;
-  imageContainer.appendChild(imageMeme2)
+  imageContainer.src = event3.target.src;  
 })
