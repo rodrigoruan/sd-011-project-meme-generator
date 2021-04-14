@@ -13,12 +13,12 @@
       <h1>Gerador de Memes!</h1>
     </header>
     <section>
-      <label>Texto</label> <input placeholder="Digite seu meme aqui" id="text-input" type="text">
+      <label>Texto:</label> <input placeholder="Digite seu meme aqui" id="text-input" type="text" maxlength="60"> <br>
+      <label for="file">Foto:  </label><input accept="image/*" type="file" id="meme-insert">
     </section>
     <section id="meme-image-container">
-      <div id="meme-text">
-
-      </div>
+      <img id="meme-image" src="" alt="">
+      <h2 id="meme-text"></h2>
     </section>
   </main>
   <script src="script.js"></script>
