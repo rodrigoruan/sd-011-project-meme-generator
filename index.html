@@ -8,18 +8,25 @@
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <h1>Meme Generator</h1>
-  <p>Texto: </p>
-  <input id="text-input" maxlength="60" type="text">
-  <p>Foto: </p>
-  <input type="file" id="meme-insert" accept="image/png, image/jpeg">
+  <section id="parte-superior">
+    <h1>Meme Generator</h1>
+    <section id="teste">
+      <p>Texto: </p>
+      <input id="text-input" maxlength="60" type="text">
+      <p>Foto: </p>
+      <input type="file" id="meme-insert" accept="image/png, image/jpeg">
+    </section>
+  </section>
   <div id="meme-image-container">
     <img id="meme-image" src="" alt="">
     <p id="meme-text"></p>
   </div>
-  <button id="fire">Fire</button>
-  <button id="water">Weater</button>
-  <button id="earth">Earth</button>
+  <section>
+    <h2>Bordas Customizadas</h2>
+    <button id="fire">Fire</button>
+    <button id="water">Weater</button>
+    <button id="earth">Earth</button>
+  </section>
   <div>
     <h2>Memes Famosos</h2>
       <img id="meme-1" src="imgs/meme1.png" alt="Meme menina carro">
