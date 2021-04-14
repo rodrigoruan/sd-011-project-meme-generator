@@ -2,6 +2,7 @@ main {
   margin: 0;
   padding: 0;
 }
+
 * {
   text-align: center;
 }
@@ -12,7 +13,6 @@ main {
   height: 400px;
   margin: 50px auto;
   border: 1px solid black;
-  
 }
 
 #meme-text {
@@ -23,8 +23,8 @@ main {
   font-size: 28px;
   text-shadow: 2px 4px 3px black;
   z-index: 1;
-  font-family: Impact;
-  font-weight: bold;
+  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  font-weight: 700;
 }
 
 #meme-image {

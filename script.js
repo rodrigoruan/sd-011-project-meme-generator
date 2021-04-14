@@ -17,4 +17,4 @@ function loadFile() {
     memeImage.src = URL.createObjectURL(event.target.files[0]);
   });
 }
-loadFile()
+loadFile();
