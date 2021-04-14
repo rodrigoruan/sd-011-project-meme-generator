@@ -98,8 +98,8 @@ main::after {
   font-size: 30px;
   position: absolute;
   display: inline-block;
-  max-width: 480px;
-  max-height: 480px;
+  max-width: 385px;
+  max-height: 385px;
   margin-top: 5px;
   text-transform: uppercase;
   -webkit-text-stroke: 2px black;
