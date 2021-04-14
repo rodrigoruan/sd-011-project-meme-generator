@@ -1,11 +1,11 @@
 #meme-image-container {
-  width: 300px;
-  height: auto;
-  min-height: 50px;
+  margin: 0 auto;
+  max-width: 350px;
+  max-height: 350px;
 }
 
 #meme-text {
-  width: 100px;
+  max-width: 350px;
   position: absolute;
 }
 
