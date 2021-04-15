@@ -16,16 +16,69 @@ main {
   margin-left: auto;
 }
 
+#main-menu {
+  margin-right: auto;
+  margin-left: auto;
+  width: max-content;
+  margin-bottom: 36px;
+}
+
+#main-menu > * {
+  display: block;
+  margin-bottom: 12px;
+}
+
+#main-menu > input {
+  width: 420px;
+  padding: 12px;
+}
+
 #meme-image-container {
+  position: relative;
   margin-right: auto;
   margin-left: auto;
   width: min-content;
+  margin-bottom: 36px;
+  border: 1px solid black;
+}
+
+.meme-text {
+  position: absolute;
+  left: 50%;
+  width: 300px;
+  text-align: center;
+  transform: translateX(-50%);
+
+  text-shadow: 5px 5px 5px black;
+  font-size: 30px;
+  color: white;
+}
+
+#meme-text {
+  top: 0;
+}
+
+#meme-text-bottom {
+  bottom: 0;
 }
 
 #meme-image {
   width: 360px;
   height: 360px;
   object-fit: cover;
+  display: block;
+  background-color: white;
+}
+
+#options-menu {
+  width: max-content;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+#options-menu > * {
+  margin-bottom: 12px;
+  padding: 12px;
 }
 
 footer {
