@@ -1,12 +1,9 @@
-// shows text
-function printText() {
-  const p = document.getElementById('meme-text');
-  const input = document.getElementById('text-input');
+const para = document.getElementById('meme-text');
+const inputText = document.getElementById('text-input');
+console.log(para, inputText);
 
-  input.addEventListener('keyup', () => {
-    console.log(input.value);
-    p.innerText = input.value;
-  });
+// prints paragraph, called inline
+function getParagraph() {
+  console.log(inputText.value);
+  para.innerHTML = inputText.value;
 }
-printText();
-
