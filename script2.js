@@ -48,17 +48,17 @@ earthButton.addEventListener('click', function () {
 
 // aplica imagem selecionada ao fundo
 colossiTemplate.addEventListener('click', function () {
-	imageContainer.setAttribute('src', 'imgs/colossi.png');
+	imageContainer.setAttribute('src', 'imgs/meme1.png');
 })
 
 diasTemplate.addEventListener('click', function () {
-	imageContainer.setAttribute('src', 'imgs/dias.png');
+	imageContainer.setAttribute('src', 'imgs/meme2.png');
 })
 
 johnTemplate.addEventListener('click', function () {
-	imageContainer.setAttribute('src', 'imgs/john.png');
+	imageContainer.setAttribute('src', 'imgs/meme3.png');
 })
 
 rinaldiTemplate.addEventListener('click', function () {
-	imageContainer.setAttribute('src', 'imgs/rinaldi.png');
+	imageContainer.setAttribute('src', 'imgs/meme4.png');
 })
