@@ -6,18 +6,13 @@ input.addEventListener('keyup', (event) => {
 });
 
 // Fazendo o load da imagem
-// stackoverflow.com/questions/3814231/loading-an-image-to-a-img-from-input-file
-function onFileSelected(event) {
-  const selectedFile = event.target.files[0];
-  const reader = new FileReader();
+// https://stackoverflow.com/questions/4459379/preview-an-image-before-it-is-uploaded/27165977#27165977
 
-  const imgtag = document.getElementById('meme-image');
-  imgtag.title = selectedFile.name;
-
-  reader.onload = function loadTheImage(eventinside) {
-    imgtag.src = eventinside.target.result;
+const loadFile = (event) => {
+  const output = document.getElementById('meme-image');
+  output.src = URL.createObjectURL(event.target.files[0]);
+  output.onload = () => {
+    URL.revokeObjectURL(output.src);
   };
-
-  reader.readAsDataURL(selectedFile);
-}
-onFileSelected();
+};
+loadFile();

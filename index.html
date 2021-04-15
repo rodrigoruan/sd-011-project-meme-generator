@@ -10,12 +10,13 @@
 <body>
   <header id="header">Meme Generator</header>
   <label for="text-input">Texto:</label>
-  <input id="text-input" type="text" maxlength="60"><br>
+  <input id="text-input" type="text" maxlength="60">
+  <br>
   <label for="meme-insert">Foto:</label>
-  <input id="meme-insert" type="file" onchange="onFileSelected(event)"><br>
-  <!--https://stackoverflow.com/questions/3814231/loading-an-image-to-a-img-from-input-file-->
+  <input id="meme-insert" type="file" accept="image/*" onchange="loadFile(event)">
+  <br>
   <div id="meme-image-container">
-    <p id="meme-text">Teste</p>
+    <p id="meme-text"></p>
     <img id="meme-image" height="400" width="400">
   </div>
 
