@@ -1,0 +1,34 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+header {
+  text-align: center;
+  padding: 36px 0;
+}
+
+main {
+  min-height: 75vh;
+  max-width: 80%;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+#meme-image-container {
+  margin-right: auto;
+  margin-left: auto;
+  width: min-content;
+}
+
+#meme-image {
+  width: 360px;
+  height: 360px;
+  object-fit: cover;
+}
+
+footer {
+  text-align: center;
+  padding: 24px 0;
+}
