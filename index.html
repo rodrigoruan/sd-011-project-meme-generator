@@ -5,22 +5,28 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="style.css">
-  <title>Document</title>
+  <title>Meme-gerator-project</title>
 </head>
 <body>
-    <div id="meme-image-container">
-      <input 
-        type="text"
-        onkeyup="getParagraph()" 
-        id="text-input"
-      />
-      
-
-      <div id="image-and-text">
-        <p id="meme-text"></p>
-      </div>
-
+  <div id="meme-image-container">
+      <div id="form">
+        <h1>Meme Gerator</h1>
+        <input 
+          type="text"
+          id="text-input"
+        />
+        <input type="file" 
+        id="meme-insert"
+        />
     </div>
+
+    
+    <div id="image-and-text">
+      <p id="meme-text"></p>
+      <img src="" id="meme-image">
+    </div>
+
+  </div>
 
 
   <script src="script.js"></script>

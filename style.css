@@ -1,0 +1,11 @@
+#image-and-text {
+  width: 503px;
+  height: 503px;
+  border: 1px solid black;
+  margin-top: 20px;
+}
+
+#meme-text {
+  position: absolute;
+  color: white;
+}
