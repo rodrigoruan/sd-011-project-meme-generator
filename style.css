@@ -48,3 +48,30 @@
   font-size: 16px;
   color: white;
 }
+
+#memes-wraper {
+  margin-top: 150px;
+}
+
+#meme-1 {
+  width: 100px;
+  border: 1px solid;
+}
+
+#meme-2 {
+  width: 100px;
+  margin-left: 10px;
+  border: 1px solid;
+}
+
+#meme-3 {
+  width: 100px;
+  margin-left: 10px;
+  border: 1px solid;
+}
+
+#meme-4 {
+  width: 100px;
+  margin-left: 10px;
+  border: 1px solid;
+}

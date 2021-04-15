@@ -4,9 +4,8 @@ const inputText = document.getElementById('text-input');
 const file = document.getElementById('meme-insert');
 const image = document.getElementById('meme-image');
 const imageBackGr = document.getElementById('meme-image-container');
-const fire = document.getElementById('fire');
-const earth = document.getElementById('earth');
-const water = document.getElementById('water');
+const btns = document.getElementById('btns-container');
+const memes = document.getElementById('memes-wraper');
 
 // prints paragraph, called inline
 inputText.addEventListener('keyup', (e) => {
@@ -23,17 +22,11 @@ file.addEventListener('change', () => {
   }
 });
 
-fire.addEventListener('click', (e) => {
-  const propBorder = window.getComputedStyle(fire, null).getPropertyValue('border');
+btns.addEventListener('click', (e) => {
+  const propBorder = window.getComputedStyle(e.target, null).getPropertyValue('border');
   imageBackGr.style.border = propBorder;
 });
 
-earth.addEventListener('click', (e) => {
-  const propBorder = window.getComputedStyle(earth, null).getPropertyValue('border');
-  imageBackGr.style.border = propBorder;
-});
-
-water.addEventListener('click', (e) => {
-  const propBorder = window.getComputedStyle(water, null).getPropertyValue('border');
-  imageBackGr.style.border = propBorder;
+memes.addEventListener('click', (e) => {
+  image.src = e.target.src;
 });
