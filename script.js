@@ -7,12 +7,14 @@ input.addEventListener('keyup', (event) => {
 
 // Fazendo o load da imagem
 // https://stackoverflow.com/questions/4459379/preview-an-image-before-it-is-uploaded/27165977#27165977
-
-const loadFile = (event) => {
-  const output = document.getElementById('meme-image');
-  output.src = URL.createObjectURL(event.target.files[0]);
-  output.onload = () => {
-    URL.revokeObjectURL(output.src);
-  };
-};
-loadFile();
+function loadImage() {
+  const loadedImage = document.querySelector('#meme-insert');
+  loadedImage.addEventListener('change', (event) => {
+    const output = document.getElementById('meme-image');
+    output.src = URL.createObjectURL(event.target.files[0]);
+    output.onload = () => {
+      URL.revokeObjectURL(output.src);
+    };
+  });
+}
+loadImage();
