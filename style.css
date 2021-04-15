@@ -3,10 +3,11 @@
   height: 400px;
   display: inline-block;
   border: black solid 1px;
+  background-color: white;
 }
 
 #meme-image {
-  background: white;
+  background-color: white;
   width: 400px;
   height: 400px;
   display: inline-block;
