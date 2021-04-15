@@ -15,10 +15,9 @@ main {
 #meme-text {
   color: white;
   width: 60%;
-  text-align: center;
   position: absolute;
   top: 260px;
-  left: 150px;
+  left: 140px;
   font-size: 30px;
   text-shadow: 5px 5px 5px black;
   z-index: 1;

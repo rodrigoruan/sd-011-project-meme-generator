@@ -12,14 +12,11 @@ const clickImg2 = document.getElementById('meme-2');
 const clickImg3 = document.getElementById('meme-3');
 const clickImg4 = document.getElementById('meme-4');
 
-// Ao carregar todo o site, inicia uma função que possui todas as funções reunidas
-window.onload = onLoad;
-
 // Cria um parágrafo de texto e insere dentro da div da imagem
 function createMemeText() {
   textInput.addEventListener('keyup', () => {
     const text = textInput.value;
-    memeText.innerText = text.toUpperCase();
+    memeText.innerText = text;
   });
 }
 
@@ -74,7 +71,7 @@ function setPreImagesMeme() {
     memeImage.src = 'imgs/meme3.png';
   });
   clickImg4.addEventListener('click', () => {
-    memeImage.src = 'imgs/meme4.png'; 
+    memeImage.src = 'imgs/meme4.png';
   });
 }
 
@@ -86,3 +83,6 @@ function onLoad() {
   earthBorder();
   setPreImagesMeme();
 }
+
+// Ao carregar todo o site, inicia uma função que possui todas as funções reunidas
+window.onload = onLoad;
