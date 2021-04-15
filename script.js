@@ -27,3 +27,23 @@ function onLoad() {
 }
 
 window.onload = onLoad;
+
+//6
+const fireBtn = document.querySelector('#fire');
+const waterBtn = document.querySelector('#water');
+const earthBtn = document.querySelector('#earth');
+
+fireBtn.addEventListener('click', function () {
+  container.style.border = '3px dashed red';
+  fireBtn.style.backgroundColor = 'red';
+});
+
+waterBtn.addEventListener('click', function () {
+  container.style.border = '5px double blue';
+  waterBtn.style.backgroundColor = 'blue';
+});
+
+earthBtn.addEventListener('click', function () {
+  container.style.border = '6px groove green';
+  earthBtn.style.backgroundColor = 'green';
+})
