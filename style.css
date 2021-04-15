@@ -41,3 +41,13 @@
 #buttons {
 	margin-top: 10px;
 }
+
+.template {
+	width: 100px;
+	margin-right: 5px;
+	border:	6px dashed rgb(195, 0, 255)
+}
+
+h2 {
+	color: rgb(43, 77, 151);
+}

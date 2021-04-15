@@ -6,37 +6,59 @@ const imageContainer = document.querySelector('#meme-image');
 const fireButton = document.getElementById('fire');
 const waterButton = document.getElementById('water');
 const earthButton = document.getElementById('earth');
+const colossiTemplate = document.getElementById('meme-1')
+const diasTemplate = document.getElementById('meme-2')
+const johnTemplate = document.getElementById('meme-3')
+const rinaldiTemplate = document.getElementById('meme-4')
 
+console.log(colossiTemplate);
 
 // retorna texto inserido em text-input
 inputText.addEventListener('keyup', function () {
-    memeText.innerText = inputText.value;
+	memeText.innerText = inputText.value;
 });
 
 // retorna imagem inserida
-memeImageInput.addEventListener('change', function() {
-    const file = this.files[0];
+memeImageInput.addEventListener('change', function () {
+	const file = this.files[0];
 
-    if (file) {
-        const reader = new FileReader();
+	if (file) {
+		const reader = new FileReader();
 
-        reader.addEventListener('load', function() {
-            imageContainer.setAttribute('src', this.result);
-        })
+		reader.addEventListener('load', function () {
+			imageContainer.setAttribute('src', this.result);
+		})
 
-        reader.readAsDataURL(file);
-    }
+		reader.readAsDataURL(file);
+	}
 })
 
-// altera propriedades botão fire
-fireButton.addEventListener('click', function() {
-    memeContainer.style.border = '3px dashed red';
+// altera propriedades botões fire water earth
+fireButton.addEventListener('click', function () {
+	memeContainer.style.border = '3px dashed red';
 })
 
-waterButton.addEventListener('click', function() {
-    memeContainer.style.border = '5px double blue';
+waterButton.addEventListener('click', function () {
+	memeContainer.style.border = '5px double blue';
 })
 
-earthButton.addEventListener('click', function() {
-    memeContainer.style.border = '6px groove green';
+earthButton.addEventListener('click', function () {
+	memeContainer.style.border = '6px groove green';
+})
+
+// aplica imagem selecionada ao fundo
+colossiTemplate.addEventListener('click', function () {
+	imageContainer.setAttribute('src', 'imgs/colossi.jpeg');
+})
+
+diasTemplate.addEventListener('click', function () {
+	imageContainer.setAttribute('src', 'imgs/dias.jpeg');
+})
+
+johnTemplate.addEventListener('click', function () {
+	imageContainer.setAttribute('src', 'imgs/john.jpeg');
+})
+
+rinaldiTemplate.addEventListener('click', function () {
+	imageContainer.setAttribute('src', 'imgs/rinaldi.jpeg');
 })

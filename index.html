@@ -11,25 +11,34 @@
 
 <body>
 	<main>
-		<header>Crie seu meme</header>
-		<section id = "input-options">
-		<form>
-			<label for="meme">Insira a legenda</label><br>
-			<input type="text" id="text-input" name="meme" maxlength="60">
-		</form><br>
-		<form>
-			<label for="img">Imagem</label><br>
-			<input id="meme-insert" type="file" name="img">
-		</form><br>
-	</section>
+		<header>
+			<h1>BROTHERAGE MEMES</h1>
+		</header>
+		<section id="input-options">
+			<form>
+				<label for="meme">Insira a legenda</label><br>
+				<input type="text" id="text-input" name="meme" maxlength="60">
+			</form><br>
+			<form>
+				<label for="img">Imagem</label><br>
+				<input id="meme-insert" type="file" name="img">
+			</form><br>
+		</section>
 		<section id="meme-image-container">
 			<img src="" id="meme-image">
 			<p id="meme-text"></p>
 		</section>
 		<section id="buttons">
-			<button id = "fire">Fogo</button>
-			<button id = "water">Água</button>
-			<button id = "earth">Terra</button>
+			<button id="fire">Fogo</button>
+			<button id="water">Água</button>
+			<button id="earth">Terra</button>
+		</section>
+		<section id="example-templates">
+			<h2>ESCOLHA O BROTHER</h2>
+			<img id="meme-1" class="template" src="imgs/colossi.jpeg" alt="template exemplo">
+			<img id="meme-2" class="template" src="imgs/dias.jpeg" alt="template exemplo">
+			<img id="meme-3" class="template" src="imgs/john.jpeg" alt="template exemplo">
+			<img id="meme-4" class="template" src="imgs/rinaldi.jpeg" alt="template exemplo">
 		</section>
 	</main>
 	<script src="script2.js"></script>
