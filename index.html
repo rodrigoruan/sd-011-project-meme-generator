@@ -8,25 +8,26 @@
   <title>Meme-gerator-project</title>
 </head>
 <body>
-  <div id="meme-image-container">
-      <div id="form">
-        <h1>Meme Gerator</h1>
-        <input 
-          type="text"
-          id="text-input"
-        />
-        <input type="file" 
-        id="meme-insert"
-        />
-    </div>
-
+  
+  <div id="form">
+    <h1>Meme Gerator</h1>
+    <label for="text-input">Text:</label>
+    <input 
+      type="text"
+      id="text-input"
+    />
+    <br>
+    <label for="meme-insert">Foto:</label>
+    <input type="file" 
+    id="meme-insert"
+    maxlength="60"
+    />
+  </div>   
     
-    <div id="image-and-text">
+    <div id="meme-image-container">
       <p id="meme-text"></p>
-      <img src="" id="meme-image">
+      <img src="" id="meme-image" class="meme-image">
     </div>
-
-  </div>
 
 
   <script src="script.js"></script>

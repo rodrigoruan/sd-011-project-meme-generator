@@ -14,8 +14,6 @@ file.addEventListener('change', () => {
     const reader = new FileReader();
     reader.onload = (e) => {
       image.setAttribute('src', e.target.result);
-      image.style.width = '500px';
-      image.style.height = '500px';
     };
     reader.readAsDataURL(file.files[0]);
   }
