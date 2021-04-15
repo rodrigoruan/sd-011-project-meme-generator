@@ -24,12 +24,27 @@
   background-color: red;
 }
 
+#fire {
+  border: 3px dashed red;
+  background-color: red;
+}
+
 .water {
   border: 5px double blue;
   background-color: blue;
 }
 
+#water {
+  border: 5px double blue;
+  background-color: blue;
+}
+
 .earth {
+  border: 6px groove green;
+  background-color: green;
+}
+
+#earth {
   border: 6px groove green;
   background-color: green;
 }

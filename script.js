@@ -22,17 +22,16 @@ loadImage();
 const fireButton = document.querySelector('#fire');
 const waterButton = document.querySelector('#water');
 const earthButton = document.querySelector('#earth');
-
-const image = document.querySelector('#meme-image');
+const container = document.querySelector('#meme-image-container');
 
 fireButton.addEventListener('click', () => {
-  image.className = 'fire';
+  container.style.border = '3px dashed red';
 });
 
 waterButton.addEventListener('click', () => {
-  image.className = 'water';
+  container.style.border = '5px double blue';
 });
 
 earthButton.addEventListener('click', () => {
-  image.className = 'earth';
+  container.style.border = '6px groove green';
 });
