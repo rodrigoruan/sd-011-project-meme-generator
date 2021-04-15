@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <title>Meme Generator</title>
+</head>
+<body>
+  <header>
+    <h1>Meme Generator</h1>
+  </header>
+
+  <main>
+    <section id="main-menu">
+      <input type="text" id="text-input" placeholder="Digite uma frase para ficar na parte superior" maxlength="60">
+      <input type="text" id="text-input-bottom" placeholder="(Opcional) Digite uma frase para ficar na parte inferior" maxlength="60">
+      <label for="meme-insert">Escolha uma imagem</label>
+      <input type="file" id="meme-insert">
+    </section>
+
+    <section id="meme-image-container">
+      <p id="meme-text">Os testes não vão falhar</p>
+      <p id="meme-text-bottom">se não tiver testes</p>
+      <img src="https://pyxis.nymag.com/v1/imgs/d6a/dc7/4a5001b7beea096457f480c8808572428b-09-roll-safe.2x.h473.w710.jpg" alt="" id="meme-image">
+    </section>
+
+    <section id="options-menu">
+      <fieldset id="border-options">
+        <legend>Tipos de Bordas</legend>
+        <button id="standard">Padrão</button>
+        <button id="fire">Fogo</button>
+        <button id="water">Água</button>
+        <button id="earth">Terra</button>
+      </fieldset>
+      <fieldset id="predefined-images">
+        <legend>Imagens pré-definidas</legend>
+        <img src="/imgs/meme1.png" id="meme-1" class="mini">
+        <img src="/imgs/meme2.png" id="meme-2" class="mini">
+        <img src="/imgs/meme3.png" id="meme-3" class="mini">
+        <img src="/imgs/meme4.png" id="meme-4" class="mini">
+      </fieldset>
+    </section>
+  </main>
+
+  <footer>
+    <p>Criado por <a href="https://github.com/heyset">Matheus "Set" Inacio</a></p>
+  </footer>
+  <script src="script.js"></script>
+</body>
+</html>
