@@ -18,3 +18,21 @@ function loadImage() {
   });
 }
 loadImage();
+
+const fireButton = document.querySelector('#fire');
+const waterButton = document.querySelector('#water');
+const earthButton = document.querySelector('#earth');
+
+const image = document.querySelector('#meme-image');
+
+fireButton.addEventListener('click', () => {
+  image.className = 'fire';
+});
+
+waterButton.addEventListener('click', () => {
+  image.className = 'water';
+});
+
+earthButton.addEventListener('click', () => {
+  image.className = 'earth';
+});
