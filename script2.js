@@ -48,17 +48,17 @@ earthButton.addEventListener('click', function () {
 
 // aplica imagem selecionada ao fundo
 colossiTemplate.addEventListener('click', function () {
-	imageContainer.setAttribute('src', 'imgs/colossi.jpeg');
+	imageContainer.setAttribute('src', 'imgs/colossi.png');
 })
 
 diasTemplate.addEventListener('click', function () {
-	imageContainer.setAttribute('src', 'imgs/dias.jpeg');
+	imageContainer.setAttribute('src', 'imgs/dias.png');
 })
 
 johnTemplate.addEventListener('click', function () {
-	imageContainer.setAttribute('src', 'imgs/john.jpeg');
+	imageContainer.setAttribute('src', 'imgs/john.png');
 })
 
 rinaldiTemplate.addEventListener('click', function () {
-	imageContainer.setAttribute('src', 'imgs/rinaldi.jpeg');
+	imageContainer.setAttribute('src', 'imgs/rinaldi.png');
 })
