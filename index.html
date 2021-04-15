@@ -10,20 +10,30 @@
 </head>
 
 <body>
-	<h1>Crie seu meme</h1>
-	<form>
-		<label for="meme">Insira a legenda</label><br>
-		<input type="text" id="text-input" name="meme" maxlength="60">
-	</form><br>
-	<form>
-		<label for="img">Imagem</label><br>
-		<input id="meme-insert" type="file" name="img">
-	</form><br>
-	<div id="meme-image-container">
-		<img src="" id="meme-image">
-		<p id="meme-text"></p>
-	</div>
+	<main>
+		<header>Crie seu meme</header>
+		<section id = "input-options">
+		<form>
+			<label for="meme">Insira a legenda</label><br>
+			<input type="text" id="text-input" name="meme" maxlength="60">
+		</form><br>
+		<form>
+			<label for="img">Imagem</label><br>
+			<input id="meme-insert" type="file" name="img">
+		</form><br>
+	</section>
+		<section id="meme-image-container">
+			<img src="" id="meme-image">
+			<p id="meme-text"></p>
+		</section>
+		<section id="buttons">
+			<button id = "fire">Fogo</button>
+			<button id = "water">Água</button>
+			<button id = "earth">Terra</button>
+		</section>
+	</main>
 	<script src="script2.js"></script>
+
 </body>
 
 </html>

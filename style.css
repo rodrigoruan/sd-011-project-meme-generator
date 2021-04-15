@@ -22,3 +22,22 @@
   position: relative;
   background-color: white;
 }
+
+#fire {
+	background-color: red;
+	color: white;
+}
+
+#water {
+	background-color: blue;
+	color: white;
+}
+
+#earth {
+	background-color: green;
+	color: white;
+}
+
+#buttons {
+	margin-top: 10px;
+}
