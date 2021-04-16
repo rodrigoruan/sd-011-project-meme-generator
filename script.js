@@ -34,7 +34,8 @@ function addBorder(event) {
 btnsBorder.addEventListener('click', addBorder);
 
 function showMiniatureImage(event) {
-  newImg.src = `images/${event.target.className}.png`;
+  const memeSelected = event.target.id.replace('-', '');
+  newImg.src = `imgs/${memeSelected}.png`;
 }
 
 miniatureMemes.addEventListener('click', showMiniatureImage);
