@@ -19,6 +19,7 @@ function loadImage() {
 }
 loadImage();
 
+// Aplicando estilo com os botões
 const fireButton = document.querySelector('#fire');
 const waterButton = document.querySelector('#water');
 const earthButton = document.querySelector('#earth');
@@ -34,4 +35,11 @@ waterButton.addEventListener('click', () => {
 
 earthButton.addEventListener('click', () => {
   container.style.border = '6px groove green';
+});
+
+// Colocando uma imagem do grupo de imagens
+const memeImage = document.getElementById('meme-image');
+const memes = document.getElementById('memes');
+memes.addEventListener('click', (eventoDeOrigem) => {
+  memeImage.src = eventoDeOrigem.target.src;
 });
