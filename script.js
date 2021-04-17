@@ -13,14 +13,14 @@ function setText() {
 window.onload = () => {
   getText.addEventListener('keyup', setText);
   btnFire.addEventListener('click', () => {
-    wrapper.style.border = '3px dashed red';
+    wrapper.style.border = '3px dashed rgb(255, 0, 0)';
   });
 
   btnWater.addEventListener('click', () => {
-    wrapper.style.border = '5px double blue';
+    wrapper.style.border = '5px double rgb(0, 0, 255)';
   });
 
   btnEarth.addEventListener('click', () => {
-    wrapper.style.border = '6px groove green';
+    wrapper.style.border = '6px groove rgb(0, 128, 0)';
   });
 };

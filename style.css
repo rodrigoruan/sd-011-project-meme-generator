@@ -34,15 +34,15 @@ header {
 }
 
 .fire {
-  border: 3px dashed red;
+  border: 3px dashed rgb(255, 0, 0);
 }
 
 .water {
-  border: 5px double blue;
+  border: 5px double rgb(0, 0, 255);
 }
 
 .earth {
-  border: 6px groove green;
+  border: 6px groove rgb(0, 128, 0);
 }
 
 .btns {
