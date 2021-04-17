@@ -48,3 +48,37 @@ header {
 #btns {
   margin-top: 15px;
 }
+
+#miniaturas {
+  margin-top: 15px;
+  width: 500px;
+  height: 100px;
+}
+
+#meme-1 {
+  border: 1px solid black;
+  display: inline-block;
+  width: 100px;
+  height: 100px;
+}
+
+#meme-2 {
+  border: 1px solid black;
+  display: inline-block;
+  width: 100px;
+  height: 100px;
+}
+
+#meme-3 {
+  border: 1px solid black;
+  display: inline-block;
+  width: 100px;
+  height: 100px;
+}
+
+#meme-4 {
+  border: 1px solid black;
+  display: inline-block;
+  width: 100px;
+  height: 100px;
+}
