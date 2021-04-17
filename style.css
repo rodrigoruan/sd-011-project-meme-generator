@@ -33,18 +33,18 @@ header {
   color: white;
 }
 
-.fire {
-  border: 3px dashed red;
+#fire {
+  background-color: red;
 }
 
-.water {
-  border: 5px double blue;
+#water {
+  background-color: blue;
 }
 
-.earth {
-  border: 6px groove green;
+#earth {
+  background-color: green;
 }
 
-.btns {
+#btns {
   margin-top: 15px;
 }
