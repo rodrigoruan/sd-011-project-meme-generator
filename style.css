@@ -32,3 +32,19 @@ header {
   font-size: 30px;
   color: white;
 }
+
+.fire {
+  border: 3px dashed red;
+}
+
+.water {
+  border: 5px double blue;
+}
+
+.earth {
+  border: 6px groove green;
+}
+
+.btns {
+  margin-top: 15px;
+}
