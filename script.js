@@ -3,9 +3,9 @@ const printext = document.getElementById('meme-text');
 
 function setText() {
   const item = getText.value;
-  printext.innerText = item;   
+  printext.innerText = item;
 }
 
 window.onload = () => {
   getText.addEventListener('keyup', setText);
-}
+};
