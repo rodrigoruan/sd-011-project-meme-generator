@@ -1,9 +1,11 @@
-const memeArea = document.getElementById('meme-image-container');
-const getTextArea = document.getElementById('text-input');
+const getText = document.getElementById('text-input');
+const printext = document.getElementById('meme-text');
 
-function getText() {
-    let item = document.createElement('h2');
-    item.innerHTML = `${getTextArea.value}`
-    memeArea.appendChild(texto)
+function setText() {
+  const item = getText.value;
+  printext.innerText = item;   
 }
 
+window.onload = () => {
+  getText.addEventListener('keyup', setText);
+}
