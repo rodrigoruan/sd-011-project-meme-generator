@@ -4,7 +4,7 @@ const imageInput = document.querySelector('#meme-insert');
 const imageMeme = document.querySelector('#meme-image');
 
 function inputToText() {
-  textInput.addEventListener('blur', () => {
+  textInput.addEventListener('keyup', () => {
     const text = textInput.value;
     textMeme.innerText = text;
   });
