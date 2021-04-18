@@ -1,22 +1,54 @@
-#meme-text {
-  position: absolute;
-  text-shadow: 5px 5px 5px black;
-  font-size: 30px;
-  color: white;
+/** GENERAL **/
+* {
+  padding: 0;
+  margin: 0;
 }
 
-#meme-image {
-  width: 500px;
-  height: 500px;
+body {
+  background-image: linear-gradient(to bottom right, rgb(215, 178, 226), rgb(245, 245, 153));
+  color: rgb(83, 83, 83);
+  font-family: Roboto, sans-serif;
+  font-size: 15px;
 }
 
-#meme-image-container {
-  width: 500px;
-  height: 500px;
-  margin: 30px;
-  border: 1px solid black;
+a {
+  color: rgb(178, 150, 187);
+  text-decoration: none;
+}
+
+#container {
   background-color: white;
-  position: relative;
+  width: 65%;
+  margin: 50px auto;
+  padding: 15px;
+  border: 1px solid rgba(128, 128, 128, 0.466);
+  border-radius: 10px;
+  box-shadow: 1px 1px 1px rgba(91, 76, 95, 0.384);
+  box-sizing: border-box;
+}
+
+/** HEADER **/
+header {
+  margin-bottom: 5px;
+  display: flex;
+  flex-direction: row;
+}
+
+h1 {
+  font-family: Montserrat, sans-serif;
+  text-transform: uppercase;
+  margin-right: auto;
+}
+
+button {
+  color: white;
+  font-style: italic;
+  width: 100px;
+  margin: 5px;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  box-shadow: 1px 1px 1px rgba(128, 128, 128, 0.616);
 }
 
 #fire {
@@ -31,7 +63,63 @@
   background-color: green;
 }
 
-#meme-1, #meme-2, #meme-3, #meme-4 {
+/** SECTIONS **/
+fieldset {
+  padding: 15px;
+  border: 1px solid rgb(178, 150, 187);
+}
+
+legend {
+  padding: 5px;
+}
+
+  /*** FIRST SECTION ***/
+label {
+  display: block;
+  margin-bottom: 15px;
+}
+
+#inputs {
+  width: 500px;
+  margin: auto;
+  margin-top: 20px;
+}
+
+  /*** SECOND SECTION ***/
+#meme-image-container {
+  background-color: white;
+  width: 500px;
+  height: 500px;
+  margin: 30px auto;
+  border: 1px solid black;
+  position: relative;
+}
+
+#meme-text {
+  color: white;
+  font-size: 30px;
+  font-weight: 900;
+  text-shadow: 5px 5px 5px black;
+  margin-left: 25px;
+  margin-top: 400px;
+  position: absolute;
+}
+
+#meme-image {
+  width: 500px;
+  height: 500px;
+}
+
+  /*** THIRD SECTION ***/
+#prememe {
+  margin: auto;
+  margin-bottom: 30px;
+  width: 500px;
+}
+
+#meme-1 , #meme-2 , #meme-3 , #meme-4 {
   width: 100px;
   height: 100px;
+  margin: 5px;
+  cursor: pointer;
 }

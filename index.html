@@ -1,29 +1,49 @@
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
-    <meta charset="UTF-8">
-    <link rel="stylesheet" href="style.css">
-    <title>Meme Generator</title>
+  <meta charset="UTF-8">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200&display=swap" rel="stylesheet">  
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <title>Meme Generator</title>
 </head>
 <body>
-    <input id="text-input" maxlength="60">
-    <input type="file" name="imagem" id="meme-insert">
+  <div id="container">
+    <header>
+      <h1><a href="">Meme Generator</a></h1>
+      
+      <button id="fire">Fire 🔥</button>
+      <button id="water">Water 💧</button>
+      <button id="earth">Earth 🌲</button>
+    </header>
 
-    <div id="meme-image-container">
-        <p id="meme-text"></p>
-        <img id="meme-image">
-    </div>
+    <hr>
 
-    <button id="fire">Fire</button>
-    <button id="water">Water</button>
-    <button id="earth">Earth</button>
+    <section id="inputs">
+      <fieldset>
+        <legend>Crie o seu meme: </legend>
+        <label for="text-input">Texto: <input id="text-input" maxlength="60"></label>
+        <label for="meme-insert">Imagem: <input type="file" name="imagem" id="meme-insert"></label>
+      </fieldset>
+    </section>
 
-    <script src="script.js"></script>
+    <section id="meme-image-container">
+      <p id="meme-text"></p>
+      <img id="meme-image">
+    </section>
 
-    <br>
-    <img src="imgs/meme1.png" id="meme-1">
-    <img src="imgs/meme2.png" id="meme-2">
-    <img src="imgs/meme3.png" id="meme-3">
-    <img src="imgs/meme4.png" id="meme-4">
+    <section id="prememe">
+      <fieldset>
+        <legend>Memes layouts:</legend>
+        <img src="imgs/meme1.png" id="meme-1">
+        <img src="imgs/meme2.png" id="meme-2">
+        <img src="imgs/meme3.png" id="meme-3">
+        <img src="imgs/meme4.png" id="meme-4">
+      </fieldset>
+    </section>
+  </div>
+
+  <script src="script.js"></script>
 </body>
 </html>
