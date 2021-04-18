@@ -1,3 +1,4 @@
+const imgContainer = document.getElementById('meme-image-container');
 const textInput = document.getElementById('text-input');
 const memeText = document.getElementById('meme-text');
 
@@ -18,3 +19,20 @@ function showImage() {
   img.setAttribute('height', '300px');
 }
 showImage();
+
+// Botões que estilizam a borda do container.
+const fireButton = document.getElementById('fire');
+const waterButton = document.getElementById('water');
+const earthButton = document.getElementById('earth');
+
+fireButton.addEventListener('click', () => {
+  imgContainer.style.border = '3px dashed red';
+});
+
+waterButton.addEventListener('click', () => {
+  imgContainer.style.border = '5px double blue';
+});
+
+earthButton.addEventListener('click', () => {
+  imgContainer.style.border = '6px groove green';
+});
