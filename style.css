@@ -1,7 +1,9 @@
 #meme-image-container {
+  position: absolute;
   height: 300px;
   width: 250px;
-  position: absolute;
+  border: 1px solid black;
+  background-color: white;
 }
 
 #meme-text {
@@ -11,6 +13,8 @@
 
 #meme-image {
   position: relative;
+  height: 300px;
+  width: 250px;
 }
 
 div {
