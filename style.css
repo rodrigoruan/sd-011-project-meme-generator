@@ -9,8 +9,8 @@
 }
 
 #meme-image {
-  width: 100%;
-  height: 100%;
+  width: 500px;
+  height: 500px;
   object-fit: cover;
   position: relative;
   margin: 0 auto;
@@ -18,6 +18,7 @@
 
 #meme-text-container {
   width: 480px;
+  height: 100px;
   position: absolute;
   white-space: normal;
   word-wrap: break-word;
@@ -25,9 +26,5 @@
   color: white;
   margin-left: 10px;
   margin-right: 10px;
-}
-
-#meme-text {
-  max-height: 180px;
   overflow: hidden;
 }
