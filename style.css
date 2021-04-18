@@ -16,6 +16,7 @@
   margin: 30px;
   border: 1px solid black;
   background-color: white;
+  position: relative;
 }
 
 #fire {
@@ -28,4 +29,9 @@
 
 #earth {
   background-color: green;
+}
+
+#meme-1, #meme-2, #meme-3, #meme-4 {
+  width: 100px;
+  height: 100px;
 }
