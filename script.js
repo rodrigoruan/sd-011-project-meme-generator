@@ -1,7 +1,11 @@
+const container = document.querySelector('#meme-image-container');
 const textInput = document.querySelector('#text-input');
 const textMeme = document.querySelector('#meme-text');
 const imageInput = document.querySelector('#meme-insert');
-const imageMeme = document.querySelector('#meme-image');
+// const imageMeme = document.querySelector('#meme-image');
+const imageMeme = document.createElement('img');
+imageMeme.id = 'meme-image';
+container.appendChild(imageMeme);
 
 function inputToText() {
   textInput.addEventListener('keyup', () => {
