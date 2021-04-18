@@ -13,9 +13,13 @@ function inputToText() {
 inputToText();
 
 function inputToImage() {
-  imageInput.addEventListener('input', () => {
-    const image = URL.createObjectURL(imageInput.files[0]);
-    imageMeme.src = image;
+  imageInput.addEventListener('change', () => {
+    const image = imageInput.files[0];
+    const fileReader = new FileReader();
+    fileReader.onloadend = () => {
+      imageMeme.src = fileReader.result;
+    };
+    fileReader.readAsDataURL(image);
   });
 }
 

@@ -7,9 +7,9 @@
 }
 
 #meme-image {
+  object-fit: cover;
   width: 500px;
   height: 500px;
-  object-fit: cover;
 }
 
 #meme-text {
