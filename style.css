@@ -1,0 +1,13 @@
+* {
+  border-style: border-box;
+}
+
+#meme-image {
+  width: 400px;
+  height: 400px;
+  position: absolute;
+}
+
+#meme-insert {
+  margin-top: 410px;
+}
