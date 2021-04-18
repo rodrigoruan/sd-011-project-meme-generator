@@ -1,0 +1,18 @@
+#meme-image-container {
+  height: 300px;
+  width: 250px;
+  position: absolute;
+}
+
+#meme-text {
+  position: absolute;
+  bottom: 0;
+}
+
+#meme-image {
+  position: relative;
+}
+
+div {
+  line-height: 2em;
+}

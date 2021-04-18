@@ -11,12 +11,12 @@
   <!-- Inserir texto -->
   <div>
     <label for="text-input">Texto:</label>
-    <input type="text" id="text-input" onkeyup="showText()">
+    <input type="text" id="text-input" oninput="showText()">
   </div>
   <!-- Inserir imagem -->
   <div>
     <label for="meme-insert">Foto:</label>
-    <input type="file" id="meme-insert">
+    <input type="file" id="meme-insert" oninput="showImage()">
   </div>
   <!-- Meme container -->
   <div id="meme-image-container">
