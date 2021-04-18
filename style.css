@@ -22,4 +22,7 @@
 
 #meme-text {
   position: absolute;
+  font-size: 30px;
+  color: white;
+  text-shadow: black 5px 5px 5px;
 }
