@@ -6,6 +6,7 @@ const imageInput = document.querySelector('#meme-insert');
 const imageMeme = document.createElement('img');
 imageMeme.id = 'meme-image';
 container.appendChild(imageMeme);
+const borderBtns = document.getElementsByClassName('border-buttons');
 
 function inputToText() {
   textInput.addEventListener('keyup', () => {
@@ -28,3 +29,15 @@ function inputToImage() {
 }
 
 inputToImage();
+
+function changeBorders() {
+  for (let index = 0; index < borderBtns.length; index += 1) {
+    const button = borderBtns[index];
+    button.addEventListener('click', () => {
+      console.log(container);
+      container.className = button.id;
+    });
+  }
+}
+
+changeBorders();
