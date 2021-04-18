@@ -6,7 +6,7 @@ function writeInput() {
 
   input.onkeyup = () => {
     textArea.innerText = input.value;
-  }
+  };
 }
 
 function imageFile() {
@@ -54,13 +54,14 @@ window.onload = () => {
   const meme1 = document.getElementById('meme-1');
   const meme2 = document.getElementById('meme-2');
   const meme3 = document.getElementById('meme-3');
-  const meme4 = document.getElementById('meme-4');  
+  const meme4 = document.getElementById('meme-4');
 
   writeInput();
   imageFile();
   fireBorder();
   waterBorder();
-  earthBorder();waterBorder()
+  earthBorder();
+  waterBorder();
   preMeme(meme1);
   preMeme(meme2);
   preMeme(meme3);
