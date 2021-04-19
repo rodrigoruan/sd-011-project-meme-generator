@@ -7,6 +7,7 @@ const imageMeme = document.createElement('img');
 imageMeme.id = 'meme-image';
 container.appendChild(imageMeme);
 const borderBtns = document.getElementsByClassName('border-buttons');
+const presecMemes = document.getElementsByClassName('mini');
 
 function inputToText() {
   textInput.addEventListener('keyup', () => {
@@ -34,10 +35,20 @@ function changeBorders() {
   for (let index = 0; index < borderBtns.length; index += 1) {
     const button = borderBtns[index];
     button.addEventListener('click', () => {
-      console.log(container);
       container.className = button.id;
     });
   }
 }
 
 changeBorders();
+
+function preselectedMemes() {
+  for (let index = 0; index < presecMemes.length; index += 1) {
+    const meme = presecMemes[index];
+    meme.addEventListener('click', () => {
+      imageMeme.src = `/imgs/meme${index + 1}.png`;
+    });
+  }
+}
+
+preselectedMemes();

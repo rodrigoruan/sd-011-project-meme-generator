@@ -24,6 +24,7 @@
   text-shadow: 5px 5px 5px black;
   font-size: 30px;
   color: white;
+  font-family: Impact, sans-serif;
 }
 
 button {
@@ -31,7 +32,7 @@ button {
   height: 50px;
 }
 
-.buttons-line {
+.buttons-container {
   margin-top: 10px;
   width: 500px;
   text-align: center;
@@ -61,6 +62,38 @@ button {
 
 .earth {
   border: 6px groove green;
+}
+
+.memes-minis {
+  margin-top: 10px;
+  width: 500px;
+  text-align: center;
+}
+
+.mini {
+  width: 80px;
+  height: 80px;
+  background-size: cover;
+  display: inline-block;
+}
+
+#mini1 {
+  background-image: url('imgs/meme1.png');
+  margin-right: 50px;
+}
+
+#mini2 {
+  background-image: url('imgs/meme2.png');
+  margin-right: 50px;
+}
+
+#mini3 {
+  background-image: url('imgs/meme3.png');
+  margin-right: 50px;
+}
+
+#mini4 {
+  background-image: url('imgs/meme4.png');
 }
 
 :focus {
