@@ -18,3 +18,17 @@ for (let textInput of textInputs) {
     insertTextFromInput(e.target, textInput.target);
   })
 }
+
+const reader = new FileReader();
+const memeImageContainer = document.getElementById('meme-image');
+const memeFileInput = document.getElementById('meme-insert');
+
+reader.addEventListener('load', () => {
+  memeImageContainer.src = reader.result;
+});
+
+memeFileInput.addEventListener('change', () => {
+  if(memeFileInput.files[0]) {
+    reader.readAsDataURL(memeFileInput.files[0]);
+  }
+});
