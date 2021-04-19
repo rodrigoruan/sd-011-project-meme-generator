@@ -3,10 +3,8 @@ const divText = document.getElementById('meme-text');
 const image = document.getElementById('meme-insert');
 
 function inputText() {
-  const element = document.createElement('div');
   const inputValue = input.value;
-  element.innerText = inputValue;
-  divText.appendChild(element);
+  divText.innerHTML = inputValue;
 }
 
 function createImage(event) {
