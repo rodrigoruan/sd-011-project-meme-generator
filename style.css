@@ -101,6 +101,21 @@ main {
   border: 6px groove green;
 }
 
+#fire {
+  background-color: red;
+  color: white;
+}
+
+#water {
+  background-color: blue;
+  color: white;
+}
+
+#earth {
+  background-color: green;
+  color: white;
+}
+
 .mini {
   width: 100px;
   height: 100px;
