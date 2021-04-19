@@ -20,11 +20,11 @@ for (let textInput of textInputs) {
 }
 
 const reader = new FileReader();
-const memeImageContainer = document.getElementById('meme-image');
+const memeImage = document.getElementById('meme-image');
 const memeFileInput = document.getElementById('meme-insert');
 
 function changeCurrentImage(src) {
-  memeImageContainer.src = src;
+  memeImage.src = src;
 }
 
 reader.addEventListener('load', () => {
@@ -42,5 +42,18 @@ const predefinedMemes = document.getElementsByClassName('mini');
 for (let predef of predefinedMemes) {
   predef.addEventListener('click', () => {
     changeCurrentImage(predef.src);
+  })
+}
+
+const borderOptions = document.querySelectorAll('#border-options > button');
+const memeContainer = document.getElementById('meme-image-container');
+let currentBorderStyle = 'border-standard';
+
+for (let opt of borderOptions) {
+  opt.addEventListener('click', () => {
+    memeContainer.classList.remove(currentBorderStyle);
+
+    currentBorderStyle = opt.className;
+    memeContainer.classList.add(currentBorderStyle);
   })
 }
