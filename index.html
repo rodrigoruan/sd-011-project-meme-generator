@@ -16,17 +16,25 @@
   <!-- Inserir imagem -->
   <div>
     <label for="meme-insert">Foto:</label>
-    <input type="file" id="meme-insert" oninput="showImage()">
+    <input type="file" id="meme-insert">
   </div>
   <!-- Meme container -->
   <div id="meme-image-container">
     <div id="meme-text"></div>
-    <div id="meme-image"></div>
+    <img src="" alt="" id="meme-image">
     <!-- Botões -->
     <button id="fire">Fire</button>
     <button id="water">Whater</button>
     <button id="earth">Earth</button>
+    <!-- Memes famosos -->
   </div>
-  <script src="script.js"></script>
+  <div id="memes-famosos">
+    <p>Memes pré prontos</p>
+    <div class="memes" id="meme-1"></div>
+    <div class="memes" id="meme-2"></div>
+    <div class="memes" id="meme-3"></div>
+    <div class="memes" id="meme-4"></div>
+  </div>
+    <script src="script.js"></script>
 </body>
 </html>
