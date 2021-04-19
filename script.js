@@ -1,6 +1,6 @@
-const inputText = document.querySelector('#text-input');
-const textMeme = document.querySelector('#meme-text');
+const text = document.getElementById('meme-text');
+const textInput = document.getElementById('text-input');
 
-inputText.addEventListener('keyup', () => {
-  textMeme.innerText = inputText.value;
+textInput.addEventListener('keyup', () => {
+  text.innerText = textInput.value;
 });
