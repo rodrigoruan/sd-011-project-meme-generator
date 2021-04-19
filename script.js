@@ -6,17 +6,13 @@ const textInputs = [
   {
     field: document.getElementById('text-input-bottom'),
     target: document.getElementById('meme-text-bottom'),
-  }
-]
+  },
+];
 
-function insertTextFromInput(inputElement, targetElement) {
-  targetElement.innerText = inputElement.value;
-}
-
-for (let textInput of textInputs) {
-  textInput.field.addEventListener('input', (e) => {
-    insertTextFromInput(e.target, textInput.target);
-  })
+for (let i = 0; i < textInputs.length; i += 1) {
+  textInputs[i].field.addEventListener('input', () => {
+    textInputs[i].target.innerHTML = textInputs[i].field.value;
+  });
 }
 
 const reader = new FileReader();
@@ -32,28 +28,32 @@ reader.addEventListener('load', () => {
 });
 
 memeFileInput.addEventListener('change', () => {
-  if(memeFileInput.files[0]) {
+  if (memeFileInput.files[0]) {
     reader.readAsDataURL(memeFileInput.files[0]);
   }
 });
 
 const predefinedMemes = document.getElementsByClassName('mini');
 
-for (let predef of predefinedMemes) {
-  predef.addEventListener('click', () => {
-    changeCurrentImage(predef.src);
-  })
+for (let i = 0; i < predefinedMemes.length; i += 1) {
+  predefinedMemes[i].addEventListener('click', () => {
+    changeCurrentImage(predefinedMemes[i].src);
+  });
 }
 
 const borderOptions = document.querySelectorAll('#border-options > button');
 const memeContainer = document.getElementById('meme-image-container');
 let currentBorderStyle = 'border-standard';
 
-for (let opt of borderOptions) {
-  opt.addEventListener('click', () => {
-    memeContainer.classList.remove(currentBorderStyle);
+function changeBorderStyle(newStyle) {
+  memeContainer.classList.remove(currentBorderStyle);
 
-    currentBorderStyle = opt.className;
-    memeContainer.classList.add(currentBorderStyle);
-  })
+  memeContainer.classList.add(newStyle);
+  currentBorderStyle = newStyle;
+}
+
+for (let i = 0; i < borderOptions.length; i += 1) {
+  borderOptions[i].addEventListener('click', () => {
+    changeBorderStyle(borderOptions[i].className);
+  });
 }
