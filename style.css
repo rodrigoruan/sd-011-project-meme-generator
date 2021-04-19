@@ -82,6 +82,12 @@ main {
   padding: 12px;
 }
 
+.mini {
+  width: 100px;
+  height: 100px;
+  object-fit: cover;
+}
+
 footer {
   text-align: center;
   padding: 24px 0;

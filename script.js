@@ -23,8 +23,12 @@ const reader = new FileReader();
 const memeImageContainer = document.getElementById('meme-image');
 const memeFileInput = document.getElementById('meme-insert');
 
+function changeCurrentImage(src) {
+  memeImageContainer.src = src;
+}
+
 reader.addEventListener('load', () => {
-  memeImageContainer.src = reader.result;
+  changeCurrentImage(reader.result);
 });
 
 memeFileInput.addEventListener('change', () => {
@@ -32,3 +36,11 @@ memeFileInput.addEventListener('change', () => {
     reader.readAsDataURL(memeFileInput.files[0]);
   }
 });
+
+const predefinedMemes = document.getElementsByClassName('mini');
+
+for (let predef of predefinedMemes) {
+  predef.addEventListener('click', () => {
+    changeCurrentImage(predef.src);
+  })
+}
