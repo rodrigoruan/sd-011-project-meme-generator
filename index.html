@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang='pt-br'>
+
+  <head>
+    <meta charset='UTF-8'>
+    <link rel='stylesheet' type='text/css' href='style.css'>
+    <title>Meme Generator</title>
+  </head>
+
+  <body>
+    <header id='header'>
+      <h1 id='title'></h1>
+    </header>
+
+    <main>
+      <div id='information-container'>
+        <div>
+          <input id='text-input' type='string'>
+          <button id='insert-text'></button>
+        </div>
+        <div>
+          <input type='file' accept = 'image/*' id='img-input' onchange="loadFile(event)">
+          <input type='submit' id='insert-img'>
+        </div>
+      </div>
+      <div id='meme-image-container'>
+        <div id='img-container'><img id='meme-img'></img></div>
+        <div id='meme-text'></div>
+      </div>
+    </main>
+
+
+    <footer>
+    </footer>
+
+    <script type='text/javascript' src='script.js'></script>
+  </body>
+</html>
