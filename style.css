@@ -1,0 +1,18 @@
+#meme-image-container {
+  width: 300px;
+  margin-top: 30px;
+}
+
+#meme-text {
+  position: absolute;
+}
+
+#meme-image {
+  position: relative;
+  object-fit: contain;
+  position: absolute;
+}
+
+.imagem {  
+  width: 300px;  
+}
