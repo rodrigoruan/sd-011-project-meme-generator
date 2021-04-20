@@ -20,14 +20,14 @@ function createEventListeners() {
   input.addEventListener('keyup', inputText);
   image.addEventListener('change', createImage);
   fireButton.addEventListener('click', () => {
-    memeContainer.style.border = '3px dashed red'
-  })
+    memeContainer.style.border = '3px dashed red';
+  });
   waterButton.addEventListener('click', () => {
-    memeContainer.style.border = '5px double blue'
-  })
+    memeContainer.style.border = '5px double blue';
+  });
   eartButton.addEventListener('click', () => {
-    memeContainer.style.border = '6px groove rgb(0, 128, 0)'
-  })
+    memeContainer.style.border = '6px groove rgb(0, 128, 0)';
+  });
 }
 
 function init() {
