@@ -1,7 +1,7 @@
 #meme-image-container {
   width: 200px;
   height: 200px;
-  position: absolute;
+  position: relative;
   background-color: white;
   border: black solid 1px;
 }
@@ -20,4 +20,19 @@ img {
   text-shadow: 5px 5px 5px black;
   font-size: 30px;
   color: white;
+}
+
+.fire {
+  background-color: red;
+  border: 3px dashed red;
+}
+
+.water {
+  background-color: blue;
+  border: 5px double blue;
+}
+
+.earth {
+  background-color: green;
+  border: 6px groove green;
 }
