@@ -27,3 +27,19 @@
   object-fit: contain;
   width: 300px;
 }
+
+#fire {
+  background-color: red;
+}
+
+#water {
+  background-color: blue;
+}
+
+#earth {
+  background-color: green;
+}
+
+.prememes {
+  width: 100px;
+}
