@@ -4,6 +4,7 @@ const memeImage = document.getElementById('meme-image');
 const memeContainer = document.getElementById('meme-image-container');
 const memeInsert = document.getElementById('meme-insert');
 const buttons = document.getElementById('buttons');
+const preMemes = document.getElementById('preMemes');
 
 inputText.addEventListener('input', () => {
   memeText.innerText = inputText.value;
@@ -33,5 +34,11 @@ buttons.addEventListener('click', (event) => {
       break;
     }
     memeContainer.style.border = border;
+  }
+});
+
+preMemes.addEventListener('click', (event) => {
+  if (event.target.tagName === 'IMG') {
+    memeImage.src = event.target.src;
   }
 });
