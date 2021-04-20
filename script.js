@@ -22,17 +22,15 @@ buttons.addEventListener('click', (event) => {
   if (event.target.tagName === 'BUTTON') {
     let border = '';
     switch (event.target.className) {
-      case 'fire':
-        border = '3px dashed red';
-        break;
-
-      case 'water':
-        border = '5px double blue';
-        break;
-        
-      default:
-        border = '6px groove green';          
-        break;
+    case 'fire':
+      border = '3px dashed red';
+      break;
+    case 'water':
+      border = '5px double blue';
+      break;
+    default:
+      border = '6px groove green';
+      break;
     }
     memeContainer.style.border = border;
   }
