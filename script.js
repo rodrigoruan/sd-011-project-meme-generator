@@ -9,7 +9,7 @@ const prememes = document.getElementsByClassName('prememes');
 
 function inputText() {
   const inputValue = input.value;
-  divText.firstChild.innerText = inputValue;
+  divText.firstElementChild.innerText = inputValue;
 }
 
 function createImage(event) {
@@ -33,16 +33,6 @@ function waterBorder() {
 function earthBorder() {
   memeContainer.style.border = '6px groove rgb(0, 128, 0)';
 }
-
-// function selectBorder (event) {
-//   if (event.target.id === 'fire') {
-//     fireBorder();
-//   } else if (event.target.id === 'water') {
-//     waterBorder();
-//   } else if (event.target.id === 'earth') {
-//     earthBorder();
-//   }
-// }
 
 function createEventListeners() {
   input.addEventListener('keyup', inputText);
