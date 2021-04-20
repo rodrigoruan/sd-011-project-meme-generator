@@ -4,6 +4,7 @@
   background-color: white;
   width: 300px;
   height: 300px;
+  overflow: hidden;
 }
 
 #meme-text {
@@ -19,8 +20,8 @@
 
 #meme-image {
   position: absolute;
-  display: inline-block;
-
+  overflow: hidden;
+  height: 300px;
 }
 
 .imagem {
@@ -29,17 +30,28 @@
 }
 
 #fire {
+  color: white;
   background-color: red;
 }
 
 #water {
+  color: white;
   background-color: blue;
 }
 
 #earth {
+  color: white;
   background-color: green;
 }
 
 .prememes {
   width: 100px;
+}
+
+#meme-section {
+  display: flex;
+}
+
+#meme-section div {
+  margin: 0 5px;
 }

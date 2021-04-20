@@ -9,7 +9,7 @@ const prememes = document.getElementsByClassName('prememes');
 
 function inputText() {
   const inputValue = input.value;
-  divText.innerHTML = inputValue;
+  divText.firstChild.innerText = inputValue;
 }
 
 function createImage(event) {
@@ -22,15 +22,15 @@ function repleaceImage(event) {
   imageReplace.src = event.target.src;
 }
 
-function fireBorder () {
+function fireBorder() {
   memeContainer.style.border = '3px dashed red';
 }
 
-function waterBorder () {
+function waterBorder() {
   memeContainer.style.border = '5px double blue';
 }
 
-function earthBorder () {
+function earthBorder() {
   memeContainer.style.border = '6px groove rgb(0, 128, 0)';
 }
 
@@ -50,8 +50,8 @@ function createEventListeners() {
   fireButton.addEventListener('click', fireBorder);
   waterButton.addEventListener('click', waterBorder);
   eartButton.addEventListener('click', earthBorder);
-  for (let index = 0; index < 3; index += 1) {
-    prememes[index].addEventListener('click', repleaceImage);    
+  for (let index = 0; index < 4; index += 1) {
+    prememes[index].addEventListener('click', repleaceImage);
   }
 }
 
