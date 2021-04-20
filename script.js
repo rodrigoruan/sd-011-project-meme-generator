@@ -9,17 +9,18 @@ const prememes = document.getElementsByClassName('prememes');
 
 function inputText() {
   const inputValue = input.value;
-  divText.firstElementChild.innerText = inputValue;
+  divText.innerText = inputValue;
 }
 
 function createImage(event) {
-  const imagem = document.getElementById('image');
+  const imagem = document.getElementById('meme-image');
   imagem.src = URL.createObjectURL(event.target.files[0]);
 }
 
 function repleaceImage(event) {
-  const imageReplace = document.getElementById('image');
-  imageReplace.src = event.target.src;
+  const imageReplace = document.getElementById('meme-image');
+  const replacedMemeSrc = event.target.src;
+  imageReplace.src = replacedMemeSrc;
 }
 
 function fireBorder() {
