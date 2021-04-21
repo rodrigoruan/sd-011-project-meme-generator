@@ -17,7 +17,7 @@ containerImagem.style.backgroundColor='white';
 containerImagem.style.border = 'solid black 1px';
 containerImagem.style.display='inline-block';
 
-// Exercício 4
+// Exercício 4 e 5
 let showText2 = document.getElementById('meme-text');
 showText2.style.textShadow = 'rgb(0, 0, 0) 5px 5px 5px';
 showText2.style.fontSize='30px';
@@ -25,5 +25,20 @@ showText2.style.color='rgb(255, 255, 255)';
 showText2.style.position='absolute';
 showText2.style.marginTop='-145px';
 showText2.style.marginLeft='5px';
+
+// Exercício 6
+let fireButton = document.getElementById('fire');
+fireButton.addEventListener('click', function(){
+    containerImagem.style.border = 'dashed red 3px';
+});
+let waterButton = document.getElementById('water');
+waterButton.addEventListener('click', function(){
+    containerImagem.style.border = 'double blue 5px';
+});
+let earthButton = document.getElementById('earth');
+earthButton.addEventListener('click', function(){
+    containerImagem.style.border = 'groove green 6px';
+});
+
 
 
