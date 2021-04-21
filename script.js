@@ -3,9 +3,6 @@ let textInput = document.getElementById('text-input');
 textInput.addEventListener('keyup', function(){
     let showText = document.getElementById('meme-text');
     showText.innerText=textInput.value;
-    showText.style.position='absolute';
-    showText.style.marginTop='-75px';
-    showText.style.marginLeft='5px';
 }); 
 
 // Exercício 2
@@ -25,5 +22,8 @@ let showText2 = document.getElementById('meme-text');
 showText2.style.textShadow = 'rgb(0, 0, 0) 5px 5px 5px';
 showText2.style.fontSize='30px';
 showText2.style.color='rgb(255, 255, 255)';
+showText2.style.position='absolute';
+showText2.style.marginTop='-145px';
+showText2.style.marginLeft='5px';
 
 
