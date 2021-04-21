@@ -5,7 +5,7 @@ textInput.addEventListener('keyup', function(){
     showText.innerText=textInput.value;
     showText.style.position='absolute';
     showText.style.marginTop='-75px';
-    showText.style.marginLeft='175px';
+    showText.style.marginLeft='5px';
 }); 
 
 // Exercício 2
