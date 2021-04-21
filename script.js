@@ -11,8 +11,8 @@ textInput.addEventListener('keyup', function(){
 }); 
 
 // Exercício 2
-let input = document.getElementById('show');
+let input = document.getElementById('meme-insert');
 input.addEventListener('input', function(){
-    document.getElementById('imagem').src = URL.createObjectURL(document.getElementById('show').files[0])
+    document.getElementById('meme-image').src = URL.createObjectURL(document.getElementById('meme-insert').files[0])
 });
 
