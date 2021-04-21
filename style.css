@@ -42,6 +42,10 @@ div {
   width: 500px;
 }
 
-.memes {
+#memes-famosos div {
   display: inline-block;
+}
+
+.memeImg {
+  height: 50px;
 }
