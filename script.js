@@ -20,6 +20,10 @@ containerImagem.style.backgroundColor='white';
 containerImagem.style.border = 'solid black 1px';
 containerImagem.style.display='inline-block';
 
-// Exercício 5
+// Exercício 4
+let showText2 = document.getElementById('meme-text');
+showText2.style.textShadow = 'rgb(0, 0, 0) 5px 5px 5px';
+showText2.style.fontSize='30px';
+showText2.style.color='rgb(255, 255, 255)';
 
 
