@@ -28,16 +28,19 @@ showText2.style.marginLeft='5px';
 
 // Exercício 6
 let fireButton = document.getElementById('fire');
+fireButton.style.backgroundColor='rgb(255, 0, 0)';
 fireButton.addEventListener('click', function(){
-    containerImagem.style.border = 'dashed red 3px';
+    containerImagem.style.border = 'dashed rgb(255, 0, 0) 3px';
 });
 let waterButton = document.getElementById('water');
+waterButton.style.backgroundColor='rgb(0, 0, 255)';
 waterButton.addEventListener('click', function(){
-    containerImagem.style.border = 'double blue 5px';
+    containerImagem.style.border = 'double rgb(0, 0, 255) 5px';
 });
 let earthButton = document.getElementById('earth');
+earthButton.style.backgroundColor='rgb(0, 128, 0)';
 earthButton.addEventListener('click', function(){
-    containerImagem.style.border = 'groove green 6px';
+    containerImagem.style.border = 'groove rgb(0, 128, 0) 6px';
 });
 
 
