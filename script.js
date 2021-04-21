@@ -3,9 +3,11 @@ let textInput = document.getElementById('text-input');
 textInput.addEventListener('keyup', function(){
     let showText = document.getElementById('meme-text');
     showText.innerText=textInput.value;
+    
     showText.style.position='absolute';
     showText.style.marginTop='-75px';
     showText.style.marginLeft='175px';
+
     showText.style.textShadow = 'black 5px 5px 5px';
     showText.style.fontSize='30px';
     showText.style.color='white';
