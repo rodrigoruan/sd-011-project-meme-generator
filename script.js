@@ -1,4 +1,4 @@
-// Exercício 1 - criar caixa input e mostrar texto input
+// Exercício 1 - criar caixa input e mostrar texto input e 4
 let textInput = document.getElementById('text-input');
 textInput.addEventListener('keyup', function(){
     let showText = document.getElementById('meme-text');
@@ -6,6 +6,9 @@ textInput.addEventListener('keyup', function(){
     showText.style.position='absolute';
     showText.style.marginTop='-75px';
     showText.style.marginLeft='175px';
+    showText.style.textShadow = 'black 5px 5px 5px';
+    showText.style.fontSize='30px';
+    showText.style.color='white';
 }); 
 
 // Exercício 2
@@ -19,4 +22,7 @@ let containerImagem = document.getElementById('meme-image-container');
 containerImagem.style.backgroundColor='white';
 containerImagem.style.border = 'solid black 1px';
 containerImagem.style.display='inline-block';
+
+// Exercício 5
+
 
