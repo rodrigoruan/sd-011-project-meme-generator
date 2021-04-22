@@ -1,0 +1,7 @@
+#meme-image-container {
+  background-color: red;
+}
+
+#meme-image-container p {
+  position: absolute;
+}
