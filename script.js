@@ -4,7 +4,9 @@ function insertText() {
   imageText.innerText = textInput.value;
   window.setTimeout(insertText, 10);
 }
-insertText();
+insertText(); 
+
+
 
 function insertImage() {
   const imagePath = document.getElementById('meme-insert');
