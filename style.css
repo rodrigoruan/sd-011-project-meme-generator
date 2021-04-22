@@ -7,6 +7,10 @@
 
 #meme-image-container p {
   position: absolute;
+  text-shadow: 5px 5px 5px rgb(0, 0, 0);
+  font-size: 30px;
+  color: rgb(255, 255, 255);
+  
 }
 
 #meme-image {
