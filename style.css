@@ -28,3 +28,27 @@
 #earth {
   background-color: green;
 }
+
+.meme-template {
+  width: 100%;
+}
+
+#meme-1 {
+  width: 20%;
+  height: 150px;
+}
+
+#meme-2 {
+  width: 20%;
+  height: 150px;
+}
+
+#meme-3 {
+  width: 20%;
+  height: 150px;
+}
+
+#meme-4 {
+  width: 20%;
+  height: 150px;
+}

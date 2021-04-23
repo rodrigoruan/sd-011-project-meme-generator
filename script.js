@@ -42,3 +42,18 @@ function earthStyle() {
   });
 }
 earthStyle();
+
+function memeExample() {
+  const memeTemplate = document.querySelector('.meme-template').children;
+  for (let index = 0; index < memeTemplate.length; index += 1) {
+    memeTemplate[index].addEventListener('click', (event) => {
+      if (imageContainer.children.length > 1) {
+        imageContainer.removeChild(imageContainer.lastElementChild);
+      }
+      const selectedMeme = event.target.cloneNode(true);
+      selectedMeme.id = 'meme-image';
+      imageContainer.appendChild(selectedMeme);
+    });
+  }
+}
+memeExample();
