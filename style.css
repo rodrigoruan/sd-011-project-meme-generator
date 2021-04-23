@@ -4,10 +4,24 @@
 }
 
 #meme-image-container {
+  display: flex;
+  flex-direction: column;
   border: 1px solid;
   background-color: white;
+  position: relative;
 }
+
 #meme-image {
-border:1px solid;
-display:inline-block;
+  border: 1px solid;
+  display: inline-block;
+  position: relative;
 }
+
+#meme-text {
+  font-size: 30px;
+  
+  position: absolute;
+}
+
+
+

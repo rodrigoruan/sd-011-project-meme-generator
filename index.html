@@ -9,12 +9,17 @@
 </head>
 <body>
   
-  <form id="meme-image-container">
-    <input type="text"id="text-input" oninput="addText">
-    <div id="meme-text>"></div>
-    <input id="meme-insert" type="file" onchange="addImage">
-    <div><img id="meme-image" src=""></div>
-  </form>
+  <div id="meme-image-container">
+    <form>
+      <input type="text"id="text-input" maxlength="60">
+      <input id="meme-insert" type="file" accept="image/*">
+    </form>
+    
+    <div><img id="meme-image" src="">
+      <div id="meme-text>"></div></div>
+  </div>
+
+
   <script src="script.js"></script>
 </body>
 </html>

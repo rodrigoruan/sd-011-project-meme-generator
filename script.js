@@ -5,10 +5,7 @@ function addText() {
 }
 
 function addImage() {
-  let image = document.querySelector('img');
-  let file = document.querySelector('input[type=file]'.files[0]);
+  const image = document.querySelector('img');
+  const file = document.getElementsByTagName('input[type=file]'.files[0]);
   img.src = window.URL.createObjectURL(file);
 }
-window.load = function addEvents() {
-
-};
