@@ -1,15 +1,21 @@
 #meme-image-container {
   background-color: white;
-  border: 1px solid black;
   width: 80%;
-  height: 500px;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
 }
 
-#meme-image-container p {
+.initial-border {
+  border: 1px solid black;
+}
+
+#meme-text {
   position: absolute;
   text-shadow: 5px 5px 5px black;
   font-size: 30px;
   color: white;
+  padding: 10px;
 }
 
 #meme-image {
@@ -17,38 +23,26 @@
   height: 100%;
 }
 
-#fire {
+.fire {
   background-color: red;
+  border: 3px dashed red;
 }
 
-#water {
+.water {
   background-color: blue;
+  border: 5px double blue;
 }
 
-#earth {
+.earth {
   background-color: green;
+  border: 6px groove green;
 }
 
 .meme-template {
-  width: 100%;
+  width: 80%;
 }
 
-#meme-1 {
-  width: 20%;
-  height: 150px;
-}
-
-#meme-2 {
-  width: 20%;
-  height: 150px;
-}
-
-#meme-3 {
-  width: 20%;
-  height: 150px;
-}
-
-#meme-4 {
-  width: 20%;
+.meme-example {
+  width: 150px;
   height: 150px;
 }

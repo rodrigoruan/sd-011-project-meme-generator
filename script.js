@@ -1,58 +1,53 @@
 const imageContainer = document.getElementById('meme-image-container');
+const imagePath = document.getElementById('meme-insert');
+const fireButton = document.getElementById('fire');
+const waterButton = document.getElementById('water');
+const earthButton = document.getElementById('earth');
+const imageDisplay = document.getElementById('meme-image');
+const textInput = document.getElementById('text-input');
+const imageText = document.getElementById('meme-text');
 
 function insertText() {
-  const textInput = document.getElementById('text-input');
-  const imageText = document.getElementById('meme-text');
-  imageText.innerText = textInput.value;
-  window.setTimeout(insertText, 10);
+  textInput.addEventListener('keyup', () => {
+    imageText.innerHTML = textInput.value;
+  });
+  imageText.innerHTML = textInput.value;
 }
 insertText();
 
 function insertImage() {
-  const imagePath = document.getElementById('meme-insert');
   imagePath.addEventListener('change', () => {
-    const createImage = document.createElement('img');
-    createImage.src = URL.createObjectURL(imagePath.files[0]);
-    createImage.id = 'meme-image';
-    imageContainer.appendChild(createImage);
+    imageDisplay.src = URL.createObjectURL(imagePath.files[0]);
   });
 }
 insertImage();
 
 function fireStyle() {
-  const fireButton = document.getElementById('fire');
   fireButton.addEventListener('click', () => {
-    imageContainer.style.border = '3px dashed red';
+    imageContainer.className = 'fire';
   });
 }
 fireStyle();
 
 function waterStyle() {
-  const waterButton = document.getElementById('water');
   waterButton.addEventListener('click', () => {
-    imageContainer.style.border = '5px double blue';
+    imageContainer.className = 'water';
   });
 }
 waterStyle();
 
 function earthStyle() {
-  const earthButton = document.getElementById('earth');
   earthButton.addEventListener('click', () => {
-    imageContainer.style.border = '6px groove green';
+    imageContainer.className = 'earth';
   });
 }
 earthStyle();
 
 function memeExample() {
-  const memeTemplate = document.querySelector('.meme-template').children;
-  for (let index = 0; index < memeTemplate.length; index += 1) {
-    memeTemplate[index].addEventListener('click', (event) => {
-      if (imageContainer.children.length > 1) {
-        imageContainer.removeChild(imageContainer.lastElementChild);
-      }
-      const selectedMeme = event.target.cloneNode(true);
-      selectedMeme.id = 'meme-image';
-      imageContainer.appendChild(selectedMeme);
+  const memeOptions = document.getElementsByClassName('meme-example');
+  for (let index = 0; index < memeOptions.length; index += 1) {
+    memeOptions[index].addEventListener('click', () => {
+      imageDisplay.src = memeOptions[index].src;
     });
   }
 }
