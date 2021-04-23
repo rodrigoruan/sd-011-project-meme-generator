@@ -1,7 +1,4 @@
-* {
-  margin: 0;
-  padding: 0;
-}
+
 
 #meme-image-container {
   display: flex;
@@ -11,17 +8,17 @@
   position: relative;
 }
 
+#meme-text {
+  color: white;
+  text-shadow:  5px 5px 5px black;
+  font-size: 30px;
+  position: absolute;
+}
 #meme-image {
   border: 1px solid;
   display: inline-block;
-  position: relative;
 }
 
-#meme-text {
-  font-size: 30px;
-  
-  position: absolute;
-}
 
 
 
