@@ -18,3 +18,35 @@
   color: white;
   text-shadow: 5px 5px 5px black;
 }
+
+#fire {
+  background-color: red;
+}
+
+#water {
+  background-color: blue;
+}
+
+#earth {
+  background-color: green;
+}
+
+#meme-1 {
+  width: 100px;
+  height: 100px;
+}
+
+#meme-2 {
+  width: 100px;
+  height: 100px;
+}
+
+#meme-3 {
+  width: 100px;
+  height: 100px;
+}
+
+#meme-4 {
+  width: 100px;
+  height: 100px;
+}
