@@ -1,7 +1,7 @@
-const textInput = document.getElementById('text-input').value;
+const textInput = document.getElementById('text-input');
 
 function textShow() {
-  document.getElementById('meme-text').innerHTML = textInput;
+  document.getElementById('meme-text').innerHTML = textInput.value;
 }
 
 textInput.addEventListener('keyup', textShow);
