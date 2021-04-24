@@ -9,13 +9,13 @@
 </head>
 <body>
 
-<div id="meme-image-container">
+  <input id="text-input" type="text" onkeydown="textShow()" onkeyup="textShow()">
+  <input id="meme-insert" type="file" onchange="memeImage()">
 
-<input id="text-input" type="text" onkeydown="textShow()" onkeyup="textShow()">
-
-<p id="meme-text"></p>
-
-</div>
+  <div id="meme-image-container">
+    <p id="meme-text"></p>
+    <img id="meme-image" src=""></img>
+  </div>
 
 <script src="script.js"></script>
 
