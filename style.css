@@ -3,13 +3,25 @@
   padding: 0;
 }
 
-#meme-image-container {
+#main-content {
   display: flex;
-  flex-wrap: wrap;
+  justify-content: center;
+}
+
+#meme-image-container {
+  max-width: 50%;
+  display: flex;
+  justify-content: center;
 }
 
 #meme-image {
-  flex-grow: 1;
+  width: 100%;
+  max-height: 500px;
+}
+
+#meme-text {
+  position: absolute;
+  top: 30px;
 }
 
 .default-border {
