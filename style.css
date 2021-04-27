@@ -8,7 +8,7 @@
   flex-wrap: wrap;
 }
 
-#meme-text {
+#meme-text p {
   position: absolute;
 }
 
