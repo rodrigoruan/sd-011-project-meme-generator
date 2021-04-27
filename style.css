@@ -4,7 +4,12 @@
 }
 
 #meme-image-container {
-display: flex;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+#meme-text {
+  position: absolute;
 }
 
 .default-border {
