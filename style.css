@@ -8,8 +8,8 @@
   flex-wrap: wrap;
 }
 
-#meme-text p {
-  position: absolute;
+#meme-image {
+  flex-grow: 1;
 }
 
 .default-border {
