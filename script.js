@@ -48,7 +48,7 @@ earthBttn.addEventListener('click', () => {
 const prefabSection = document.getElementById('prefab-memes');
 
 prefabSection.addEventListener('click', (event) => {
-  if(event.target.className === 'pre-meme') {
+  if (event.target.className === 'pre-meme') {
     img.src = event.target.src;
   }
 });
