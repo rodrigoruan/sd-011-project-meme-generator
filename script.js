@@ -14,14 +14,13 @@ textInput.addEventListener('keyup', () => {
 // Requisito 2
 imgInput.addEventListener('change', () => {
   const file = imgInput.files[0]; // Armazena dentro de "file" o arquivo na posição [0] do imgInput
-  
+
   if (file) {
     const fileReader = new FileReader(); // Lê o arquivo na variavel "file" como um arquivo DATAURL, podemos definir o source
-    
+
     fileReader.addEventListener('load', () => {
       img.src = fileReader.result;
     });
     fileReader.readAsDataURL(file);
   }
-
 });
