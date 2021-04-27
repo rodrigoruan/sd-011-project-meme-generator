@@ -19,3 +19,15 @@
   width: 100%;
   height: 100%;
 }
+
+#fire {
+  background-color: red;
+}
+
+#water {
+  background-color: blue;
+}
+
+#earth {
+  background-color: green;
+}
