@@ -44,3 +44,11 @@ earthBttn.addEventListener('click', () => {
   memeContainer.style.border = 'none';
   memeContainer.style.border = '6px groove green';
 });
+
+const prefabSection = document.getElementById('prefab-memes');
+
+prefabSection.addEventListener('click', (event) => {
+  if(event.target.className === 'pre-meme') {
+    img.src = event.target.src;
+  }
+});
