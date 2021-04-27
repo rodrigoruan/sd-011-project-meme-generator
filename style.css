@@ -25,6 +25,9 @@
   position: absolute;
   top: 30px;
   max-width: 40%;
+  text-shadow: 5px 5px 5px black;
+  color: white;
+  font-size: 30px;
 }
 
 .default-border {
