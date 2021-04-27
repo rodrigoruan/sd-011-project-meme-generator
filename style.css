@@ -12,6 +12,8 @@
   max-width: 50%;
   display: flex;
   justify-content: center;
+  flex-basis: 50%; 
+  min-height: 30vh; 
 }
 
 #meme-image {
@@ -22,6 +24,7 @@
 #meme-text {
   position: absolute;
   top: 30px;
+  max-width: 40%;
 }
 
 .default-border {
