@@ -1,12 +1,10 @@
-#meme-image-container {
-  margin: 0 auto;
-  max-width: 350px;
-  max-height: 350px;
+* {
+  margin: 0;
+  padding: 0;
 }
 
-#meme-text {
-  max-width: 350px;
-  position: absolute;
+#meme-image-container {
+display: flex;
 }
 
 .default-border {
