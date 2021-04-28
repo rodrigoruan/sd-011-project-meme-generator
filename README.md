@@ -104,7 +104,7 @@ Lembre-se que você pode consultar nosso conteúdo sobre [Git & GitHub](https://
     * Exemplo: `touch index.html style.css script.js`
 
 5. Adicione as mudanças ao _stage_ do Git e faça um `commit`
-  * Verifique que as mudanças ainda não estão no _stage_
+  * Verifique que as mudanças ainda não estão no _stage_.
     * Exemplo: `git status` (devem aparecer listados os novos arquivos em vermelho)
   * Adicione o novo arquivo ao _stage_ do Git
       * Exemplo:
@@ -216,7 +216,7 @@ O não cumprimento de um requisito, total ou parcialmente, impactará em sua ava
 
 ### 1 - Crie uma caixa de texto com a qual quem usa pode interagir para inserir texto em cima da imagem escolhida.
 
-- A caixa onde o texto é inserido deve ter um `id` denominado `text-input`;
+- A caixa onde o texto é inserido deve ter um `id` denominado `text-input`;..
 
 - Você deve criar um elemento para servir de _"container"_ para a **imagem** e para o **texto** do meme. Este elemento deve ter um `id` denominado `meme-image-container`;
 
