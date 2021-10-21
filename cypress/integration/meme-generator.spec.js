@@ -86,7 +86,7 @@ const memeUpload = () => {
 describe("1 - Crie uma caixa de texto com a qual quem usa pode interagir para inserir texto em cima da imagem escolhida.", () => {
   beforeEach(() => {
     cy.viewport(1366, 768);
-    cy.visit('/');
+    cy.visit('/src/');
   })
 
   it("Será validado se o input de texto existe e conseguimos inputar texto nele", () => {
@@ -108,7 +108,7 @@ describe("1 - Crie uma caixa de texto com a qual quem usa pode interagir para in
 describe("2 - O site deve permitir que quem usa faça upload de uma imagem de seu computador.", () => {
   beforeEach(() => {
     cy.viewport(1366, 768);
-    cy.visit('/');
+    cy.visit('/src/');
   })
 
   it("Será validado se é possível carregar uma imagem através do elemento correto", () => {
@@ -130,7 +130,7 @@ describe("2 - O site deve permitir que quem usa faça upload de uma imagem de se
 describe("3 - Adicione uma moldura no container. A moldura deve ter 1 pixel de largura, deve ser preta e do tipo 'solid'. A área onde a imagem aparecerá deve ter fundo branco.", () => {
   beforeEach(() => {
     cy.viewport(1366, 768);
-    cy.visit('/');
+    cy.visit('/src/');
     cy.reload();
   })
 
@@ -157,7 +157,7 @@ describe("3 - Adicione uma moldura no container. A moldura deve ter 1 pixel de l
 describe("4 - Adicione o texto que será inserido sobre a imagem tem uma cor, sombra e tamanho específicos.", () => {
   beforeEach(() => {
     cy.viewport(1366, 768);
-    cy.visit('/');
+    cy.visit('/src/');
     cy.reload();
   })
 
@@ -184,7 +184,7 @@ describe("4 - Adicione o texto que será inserido sobre a imagem tem uma cor, so
 describe("5 - Limite o tamanho do texto que o usuário pode inserir.", () => {
   beforeEach(() => {
     cy.viewport(1366, 768);
-    cy.visit('/');
+    cy.visit('/src/');
     cy.reload();
   })
 
@@ -203,7 +203,7 @@ describe("5 - Limite o tamanho do texto que o usuário pode inserir.", () => {
 describe("6 - Permita a quem usa customizar o meme escolhido acrescentando a ele uma de três bordas. A página deve ter três botões, que ao serem clicados devem cada um trocar a própria borda ao redor do container.", () => {
   beforeEach(() => {
     cy.viewport(1366, 768);
-    cy.visit('/');
+    cy.visit('/src/');
   })
 
   it("Será validado se o botão com identificado com id `fire` funciona corretamente.", () => {
@@ -252,7 +252,7 @@ describe("6 - Permita a quem usa customizar o meme escolhido acrescentando a ele
 describe("7 - Tenha um conjunto de quatro imagens pré prontas de memes famosos para o usuário escolher. Mostre miniaturas das imagens e, mediante clique do usuário, essa imagem deve aparecer dentro da moldura do elemento de container.", () => {
   beforeEach(() => {
     cy.viewport(1366, 768);
-    cy.visit('/');
+    cy.visit('/src/');
   })
 
   it("Será validado se as imagens prontas apresentam o comportamente esperado.", () => {
