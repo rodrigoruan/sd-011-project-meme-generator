@@ -8,6 +8,28 @@
     <title>Meme Generator</title>
   </head>
   <body>
-
+    <!-- header -->
+    <header class="bg-green-500 text-2xl py-4">
+      <p class="text-green-100 text-center">Meme Generator</p>
+    </header>
+    <!-- conteudo principal -->
+    <main>
+      <section class="flex flex-col justify-center">
+        <label for="text-input" class="py-2 my-4 mx-8 text-center">
+          Título do meme
+          <input type="text" name="text-input" id="text-input" max="60" data-js="text-input" placeholder="Insira o texto do Meme" class="text-center bg-green-50 border-2 border-green-300 focus:border-green-500 rounded">
+        </label>
+        <label for="image-input" class="py-2 my-4 mx-10 text-center bg-green-500 border rounded text-green-100 cursor-pointer">
+          Selecione uma imagem
+          <input type="file" name="image-input" id="image-input" data-js="image-input" accept="image/png, image/jpeg" class="hidden">
+        </label>
+      </section>
+      <section id="meme-image-container" data-js="meme-container" class="relative py-36 m-2 border-2 bg-green-200 border-green-400 rounded-md">
+        <img src="#" alt="Sem Imagem Selecionada" data-js="meme-image" class="text-xl text-center text-green-700">
+        <span id="meme-text" data-js="meme-text" class="text-xl absolute inset-x-0 bottom-3 text-center text-white font-bold overflow-ellipsis overflow-hidden"></span>
+      </section>
+    </main>
+    <!-- footer -->
+    <script src="../script.js"></script>
   </body>
 </html>
