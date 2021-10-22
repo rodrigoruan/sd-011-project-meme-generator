@@ -12,7 +12,6 @@ memeTextInput.addEventListener('input', (event) => {
 });
 
 memeImageInput.addEventListener('change', () => {
-  console.log('estou aqui');
   const [selectedImage] = memeImageInput.files;
   const memePaddingContainer = 'py-36';
 
