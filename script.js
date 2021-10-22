@@ -19,27 +19,24 @@ memeImageInput.addEventListener('change', () => {
   memeImage.src = URL.createObjectURL(selectedImage);
 });
 
-const addBorderStyle = (borderStyle) => {
-  // memeContainer.classList.remove('border-black');
-  console.log(memeContainer.className.includes('border-black'));
-  console.log(memeContainer.className);
-  memeContainer.classList.toggle(borderStyle);
-  console.log(memeContainer.className);
+const changeBorder = (borderStyle) => {
+  const lastItem = memeContainer.classList.length - 1;
+  const lastClass = memeContainer.classList[lastItem];
+  memeContainer.className = memeContainer.className.replace(lastClass, borderStyle);
 };
 
 borderButtonsContainer.addEventListener('click', (event) => {
   const dataAttribute = event.target.dataset.js;
-  console.log(dataAttribute);
 
   switch (dataAttribute) {
   case 'fire-button':
-    addBorderStyle('border-red-600');
+    changeBorder('border-red-500');
     break;
   case 'water-button':
-    addBorderStyle('border-blue-600');
+    changeBorder('border-blue-500');
     break;
   case 'earth-button':
-    addBorderStyle('border-green-600');
+    changeBorder('border-green-500');
     break;
   default:
     break;
